@@ -1,0 +1,66 @@
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM Inbound Tourism Project.csprojAssemblyReference.cache
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.AddUserControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.AddUserInBuilder.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.Base.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.DashBoardControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.dayToDayPlanControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.ExistingUserInBuilder.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.Login_Form.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.HomeControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.HomePropertiesControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.HotalControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.itineraryBuilderControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.Landing_Page.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.LocationControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.planner.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.PlannerControl.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.PlannerControl2.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.PlannerControl3.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.Properties.Resources.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM_Inbound_Tourism_Project.SplashScreen.resources
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM Inbound Tourism Project.csproj.GenerateResource.cache
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM Inbound Tourism Project.csproj.CoreCompileInputs.cache
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\CRM Inbound Tourism Project.exe.config
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\CRM Inbound Tourism Project.exe
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\CRM Inbound Tourism Project.pdb
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Animator.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.AsyncModule.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.Fundamentals.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.StateMachine.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Google.Protobuf.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\itextsharp.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\MahApps.Metro.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\MaterialSkin.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\MySql.Data.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\ReactiveUI.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\ReactiveUI.Events.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Splat.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Interactive.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Core.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Interfaces.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Linq.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.PlatformServices.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Windows.Threading.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Windows.Interactivity.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Weingartner.Wpf.Common.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Weingartner.Wpf.dll
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.AsyncModule.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.Fundamentals.pdb
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.Fundamentals.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.StateMachine.pdb
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Appccelerate.StateMachine.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Google.Protobuf.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\MahApps.Metro.pdb
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\MahApps.Metro.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\MySql.Data.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\Splat.pdb
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Interactive.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Core.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Interfaces.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Linq.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.PlatformServices.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\bin\Debug\System.Reactive.Windows.Threading.xml
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM Inbound Tourism Project.csproj.CopyComplete
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM Inbound Tourism Project.exe
+D:\final year CSSE\SPPM\latest\CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\Debug\CRM Inbound Tourism Project.pdb
