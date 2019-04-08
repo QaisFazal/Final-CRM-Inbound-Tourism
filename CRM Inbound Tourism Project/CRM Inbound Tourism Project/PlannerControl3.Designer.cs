@@ -384,7 +384,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SaddleBrown;
-            this.panel2.Location = new System.Drawing.Point(116, 561);
+            this.panel2.Location = new System.Drawing.Point(116, 553);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(718, 2);
             this.panel2.TabIndex = 7;
