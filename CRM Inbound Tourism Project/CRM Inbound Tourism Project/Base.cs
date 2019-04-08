@@ -60,6 +60,7 @@ namespace CRM_Inbound_Tourism_Project
             //plannerControl1.Show();
 
             plannerControl3.BringToFront();
+            
             panel3.Height = btnItinerarry.Height;
             panel3.Top = btnItinerarry.Top;
         }
@@ -138,6 +139,11 @@ namespace CRM_Inbound_Tourism_Project
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(1);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -16,8 +16,8 @@ namespace CRM_Inbound_Tourism_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           Application.Run(new Login_Form());
-           // Application.Run(new Base());
+          // Application.Run(new Login_Form());
+            Application.Run(new Base());
         }
     }
 }

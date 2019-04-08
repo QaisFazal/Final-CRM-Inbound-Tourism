@@ -23,7 +23,7 @@ namespace CRM_Inbound_Tourism_Project
         //private ExistingUserInBuilder existingUserInBuilder1;
         
 
-        private String arivaleDate, depatureDate, adults, childrens, ages, noOfDays, noOfRooms, single, doubleR, triple;
+        private String arivaleDate, depatureDate, adults, childrens, ages, noOfDays, noOfRooms, single, doubleR, triple, X;
 
         private void txtArrivalDate_ValueChanged_1(object sender, EventArgs e)
         {
@@ -115,14 +115,22 @@ namespace CRM_Inbound_Tourism_Project
             String depatureDate = txtDepatureDate.Value.Date.ToShortDateString();
 
             PlannerControl3 plannerControl3 = new PlannerControl3();
-            plannerControl3.setDepatureDate = depatureDate;
-            plannerControl3.setMealPreference = cmbMeals.Text;
-            plannerControl3.setHotelStatus = cmbCategary.Text;
+            plannerControl3.single.Text = txtSingle.Text;
+            plannerControl3.ddouble.Text = txtDouble.Text;
+            plannerControl3.triple.Text = txtTriple.Text;
+            plannerControl3.nofAdults.Text = txtAdults.Text;
+            plannerControl3.bofChild.Text = txtChildrents.Text;
+            plannerControl3.starCategory.Text = cmbCategary.Text;
+
+
+            //plannerControl3.setDepatureDate = depatureDate;
+            //plannerControl3.setMealPreference = cmbMeals.Text;
+            //plannerControl3.setHotelStatus = cmbCategary.Text;
 
             //setting values to calculate 
-            plannerControl3.setSingleRoom = Convert.ToInt16(txtSingle.Text);  
-            plannerControl3.setDoubleRoom = Convert.ToInt16(txtDouble.Text);
-            plannerControl3.setTripleRoom = Convert.ToInt16(txtTriple.Text);
+            //plannerControl3.setSingleRoom = Convert.ToInt16(txtSingle.Text);  
+            //plannerControl3.setDoubleRoom = Convert.ToInt16(txtDouble.Text);
+            //plannerControl3.setTripleRoom = Convert.ToInt16(txtTriple.Text);
 
             String sql = "INSERT INTO trips " +
                 "(tripId, " +
@@ -160,8 +168,8 @@ namespace CRM_Inbound_Tourism_Project
                 MessageBox.Show("Successfully added...!");
                 conn.Close();
                 
-                plannerControl3 = new PlannerControl3();
-                plannerControl3.controlTripId = (userMail + date);
+                //plannerControl3 = new PlannerControl3();
+                //plannerControl3.controlTripId = (userMail + date);
 
                 plannerControl2 = new PlannerControl2();
                 this.Controls.Clear();

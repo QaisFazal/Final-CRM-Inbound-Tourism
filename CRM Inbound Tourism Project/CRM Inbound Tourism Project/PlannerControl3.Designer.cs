@@ -28,471 +28,609 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.endTime = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.startTme = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtSingle = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblSelectedDay = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAddDayPlan = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpStart = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.Print = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.starCategory = new System.Windows.Forms.Label();
+            this.bofChild = new System.Windows.Forms.Label();
+            this.nofAdults = new System.Windows.Forms.Label();
+            this.triple = new System.Windows.Forms.Label();
+            this.ddouble = new System.Windows.Forms.Label();
+            this.single = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.txtAdults = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.nadult = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.nchildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.tchildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.tadult = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtAId = new System.Windows.Forms.TextBox();
-            this.dtpADate = new System.Windows.Forms.DateTimePicker();
-            this.txtAStartTime = new System.Windows.Forms.TextBox();
-            this.txtAEndTime = new System.Windows.Forms.TextBox();
-            this.cmbALocation = new System.Windows.Forms.ComboBox();
-            this.cmbAArea = new System.Windows.Forms.ComboBox();
-            this.cmbAHotel = new System.Windows.Forms.ComboBox();
-            this.cmbLocation = new System.Windows.Forms.ComboBox();
-            this.cmbArea = new System.Windows.Forms.ComboBox();
-            this.cmbHotels = new System.Windows.Forms.ComboBox();
-            this.txtDouble = new System.Windows.Forms.TextBox();
-            this.txtTriple = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuMetroTextbox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuMetroTextbox6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtTriple);
-            this.panel1.Controls.Add(this.txtDouble);
-            this.panel1.Controls.Add(this.cmbHotels);
-            this.panel1.Controls.Add(this.cmbArea);
-            this.panel1.Controls.Add(this.cmbLocation);
-            this.panel1.Controls.Add(this.endTime);
-            this.panel1.Controls.Add(this.startTme);
-            this.panel1.Controls.Add(this.txtSingle);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.lblSelectedDay);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnAddDayPlan);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dtpStart);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(973, 319);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // endTime
-            // 
-            this.endTime.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.endTime.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.endTime.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.endTime.BorderThickness = 1;
-            this.endTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.endTime.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.endTime.ForeColor = System.Drawing.Color.Black;
-            this.endTime.isPassword = false;
-            this.endTime.Location = new System.Drawing.Point(315, 173);
-            this.endTime.Margin = new System.Windows.Forms.Padding(4);
-            this.endTime.Name = "endTime";
-            this.endTime.Size = new System.Drawing.Size(174, 20);
-            this.endTime.TabIndex = 106;
-            this.endTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // startTme
-            // 
-            this.startTme.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.startTme.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.startTme.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.startTme.BorderThickness = 1;
-            this.startTme.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.startTme.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.startTme.ForeColor = System.Drawing.Color.Black;
-            this.startTme.isPassword = false;
-            this.startTme.Location = new System.Drawing.Point(81, 173);
-            this.startTme.Margin = new System.Windows.Forms.Padding(4);
-            this.startTme.Name = "startTme";
-            this.startTme.Size = new System.Drawing.Size(169, 20);
-            this.startTme.TabIndex = 105;
-            this.startTme.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtSingle
-            // 
-            this.txtSingle.Location = new System.Drawing.Point(315, 279);
-            this.txtSingle.Name = "txtSingle";
-            this.txtSingle.ReadOnly = true;
-            this.txtSingle.Size = new System.Drawing.Size(174, 20);
-            this.txtSingle.TabIndex = 35;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(262, 281);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 13);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "Price";
-            // 
-            // lblSelectedDay
-            // 
-            this.lblSelectedDay.AutoSize = true;
-            this.lblSelectedDay.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelectedDay.ForeColor = System.Drawing.Color.Red;
-            this.lblSelectedDay.Location = new System.Drawing.Point(652, 98);
-            this.lblSelectedDay.Name = "lblSelectedDay";
-            this.lblSelectedDay.Size = new System.Drawing.Size(0, 28);
-            this.lblSelectedDay.TabIndex = 33;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(478, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 28);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Selected Day :";
-            // 
-            // btnAddDayPlan
-            // 
-            this.btnAddDayPlan.Location = new System.Drawing.Point(873, 276);
-            this.btnAddDayPlan.Name = "btnAddDayPlan";
-            this.btnAddDayPlan.Size = new System.Drawing.Size(75, 23);
-            this.btnAddDayPlan.TabIndex = 31;
-            this.btnAddDayPlan.Text = "ADD";
-            this.btnAddDayPlan.UseVisualStyleBackColor = true;
-            this.btnAddDayPlan.Click += new System.EventHandler(this.btnAddDayPlan_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 281);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Hotel";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(262, 223);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 13);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Area";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 223);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Location";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(259, 173);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "End time";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 173);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Start time";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 107);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(178, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Start date";
+            this.label1.Size = new System.Drawing.Size(96, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Single Room :";
             // 
-            // dtpStart
+            // label2
             // 
-            this.dtpStart.Location = new System.Drawing.Point(81, 104);
-            this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(169, 20);
-            this.dtpStart.TabIndex = 16;
-            this.dtpStart.ValueChanged += new System.EventHandler(this.dtpStart_ValueChanged);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(178, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Triple Room :";
             // 
-            // dataGridView1
+            // label3
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 341);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(934, 140);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(178, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Double Room :";
             // 
-            // btnUpdate
+            // label4
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(792, 537);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 2;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(576, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 17);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "No Of Children :";
             // 
-            // Print
+            // label5
             // 
-            this.Print.Location = new System.Drawing.Point(873, 537);
-            this.Print.Name = "Print";
-            this.Print.Size = new System.Drawing.Size(75, 23);
-            this.Print.TabIndex = 3;
-            this.Print.Text = "Bill";
-            this.Print.UseVisualStyleBackColor = true;
-            this.Print.Click += new System.EventHandler(this.Print_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(576, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Star Category :";
             // 
-            // label10
+            // label6
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 497);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 13);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Trip ID :";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(576, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(97, 17);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "No Of Adults :";
             // 
-            // label11
+            // panel1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(146, 498);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Date";
+            this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.panel1.Location = new System.Drawing.Point(116, 148);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(718, 2);
+            this.panel1.TabIndex = 6;
             // 
-            // label12
+            // label7
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(279, 497);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 13);
-            this.label12.TabIndex = 36;
-            this.label12.Text = "Start Time :";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label7.Location = new System.Drawing.Point(36, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(174, 23);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "DAY TO DAY PLAN";
             // 
-            // label13
+            // label8
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(419, 496);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 13);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "End Time :";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(567, 497);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(54, 13);
-            this.label14.TabIndex = 37;
-            this.label14.Text = "Location :";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(706, 497);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 13);
-            this.label15.TabIndex = 36;
-            this.label15.Text = "Area";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(821, 497);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(32, 13);
-            this.label16.TabIndex = 36;
-            this.label16.Text = "Hotel";
-            // 
-            // txtAId
-            // 
-            this.txtAId.Location = new System.Drawing.Point(54, 494);
-            this.txtAId.Name = "txtAId";
-            this.txtAId.ReadOnly = true;
-            this.txtAId.Size = new System.Drawing.Size(86, 20);
-            this.txtAId.TabIndex = 38;
-            // 
-            // dtpADate
-            // 
-            this.dtpADate.Location = new System.Drawing.Point(182, 494);
-            this.dtpADate.Name = "dtpADate";
-            this.dtpADate.Size = new System.Drawing.Size(86, 20);
-            this.dtpADate.TabIndex = 36;
-            this.dtpADate.ValueChanged += new System.EventHandler(this.dtpADate_ValueChanged);
-            // 
-            // txtAStartTime
-            // 
-            this.txtAStartTime.Location = new System.Drawing.Point(340, 493);
-            this.txtAStartTime.Name = "txtAStartTime";
-            this.txtAStartTime.Size = new System.Drawing.Size(73, 20);
-            this.txtAStartTime.TabIndex = 36;
-            // 
-            // txtAEndTime
-            // 
-            this.txtAEndTime.Location = new System.Drawing.Point(483, 493);
-            this.txtAEndTime.Name = "txtAEndTime";
-            this.txtAEndTime.Size = new System.Drawing.Size(71, 20);
-            this.txtAEndTime.TabIndex = 39;
-            // 
-            // cmbALocation
-            // 
-            this.cmbALocation.FormattingEnabled = true;
-            this.cmbALocation.Location = new System.Drawing.Point(627, 493);
-            this.cmbALocation.Name = "cmbALocation";
-            this.cmbALocation.Size = new System.Drawing.Size(73, 21);
-            this.cmbALocation.TabIndex = 36;
-            // 
-            // cmbAArea
-            // 
-            this.cmbAArea.FormattingEnabled = true;
-            this.cmbAArea.Location = new System.Drawing.Point(741, 494);
-            this.cmbAArea.Name = "cmbAArea";
-            this.cmbAArea.Size = new System.Drawing.Size(74, 21);
-            this.cmbAArea.TabIndex = 36;
-            // 
-            // cmbAHotel
-            // 
-            this.cmbAHotel.FormattingEnabled = true;
-            this.cmbAHotel.Location = new System.Drawing.Point(859, 493);
-            this.cmbAHotel.Name = "cmbAHotel";
-            this.cmbAHotel.Size = new System.Drawing.Size(89, 21);
-            this.cmbAHotel.TabIndex = 36;
-            // 
-            // cmbLocation
-            // 
-            this.cmbLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLocation.FormattingEnabled = true;
-            this.cmbLocation.Location = new System.Drawing.Point(79, 220);
-            this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(169, 21);
-            this.cmbLocation.TabIndex = 115;
-            this.cmbLocation.SelectedIndexChanged += new System.EventHandler(this.cmbLocation_SelectedIndexChanged_1);
-            // 
-            // cmbArea
-            // 
-            this.cmbArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbArea.FormattingEnabled = true;
-            this.cmbArea.Location = new System.Drawing.Point(315, 220);
-            this.cmbArea.Name = "cmbArea";
-            this.cmbArea.Size = new System.Drawing.Size(174, 21);
-            this.cmbArea.TabIndex = 116;
-            this.cmbArea.SelectedIndexChanged += new System.EventHandler(this.cmbArea_SelectedIndexChanged_1);
-            // 
-            // cmbHotels
-            // 
-            this.cmbHotels.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHotels.FormattingEnabled = true;
-            this.cmbHotels.Location = new System.Drawing.Point(79, 276);
-            this.cmbHotels.Name = "cmbHotels";
-            this.cmbHotels.Size = new System.Drawing.Size(169, 21);
-            this.cmbHotels.TabIndex = 117;
-            this.cmbHotels.SelectedIndexChanged += new System.EventHandler(this.cmbHotels_SelectedIndexChanged);
-            // 
-            // txtDouble
-            // 
-            this.txtDouble.Location = new System.Drawing.Point(495, 279);
-            this.txtDouble.Name = "txtDouble";
-            this.txtDouble.ReadOnly = true;
-            this.txtDouble.Size = new System.Drawing.Size(174, 20);
-            this.txtDouble.TabIndex = 118;
-            // 
-            // txtTriple
-            // 
-            this.txtTriple.Location = new System.Drawing.Point(675, 279);
-            this.txtTriple.Name = "txtTriple";
-            this.txtTriple.ReadOnly = true;
-            this.txtTriple.Size = new System.Drawing.Size(174, 20);
-            this.txtTriple.TabIndex = 119;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(178, 217);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 17);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "From :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(312, 263);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(576, 217);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 13);
-            this.label9.TabIndex = 120;
-            this.label9.Text = "Single Room ";
+            this.label9.Size = new System.Drawing.Size(30, 17);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "To :";
+            // 
+            // starCategory
+            // 
+            this.starCategory.Location = new System.Drawing.Point(724, 106);
+            this.starCategory.Name = "starCategory";
+            this.starCategory.Size = new System.Drawing.Size(100, 23);
+            this.starCategory.TabIndex = 15;
+            this.starCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // bofChild
+            // 
+            this.bofChild.Location = new System.Drawing.Point(724, 65);
+            this.bofChild.Name = "bofChild";
+            this.bofChild.Size = new System.Drawing.Size(100, 23);
+            this.bofChild.TabIndex = 14;
+            this.bofChild.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // nofAdults
+            // 
+            this.nofAdults.Location = new System.Drawing.Point(724, 25);
+            this.nofAdults.Name = "nofAdults";
+            this.nofAdults.Size = new System.Drawing.Size(100, 23);
+            this.nofAdults.TabIndex = 13;
+            this.nofAdults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // triple
+            // 
+            this.triple.AccessibleName = "triple";
+            this.triple.Location = new System.Drawing.Point(303, 106);
+            this.triple.Name = "triple";
+            this.triple.Size = new System.Drawing.Size(100, 23);
+            this.triple.TabIndex = 12;
+            this.triple.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ddouble
+            // 
+            this.ddouble.AccessibleName = "double";
+            this.ddouble.Location = new System.Drawing.Point(303, 65);
+            this.ddouble.Name = "ddouble";
+            this.ddouble.Size = new System.Drawing.Size(100, 23);
+            this.ddouble.TabIndex = 11;
+            this.ddouble.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // single
+            // 
+            this.single.Location = new System.Drawing.Point(303, 25);
+            this.single.Name = "single";
+            this.single.Size = new System.Drawing.Size(100, 23);
+            this.single.TabIndex = 10;
+            this.single.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(247, 217);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(156, 21);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(629, 217);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(178, 21);
+            this.comboBox2.TabIndex = 17;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(178, 269);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 17);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Description:";
+            // 
+            // txtAdults
+            // 
+            this.txtAdults.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtAdults.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtAdults.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtAdults.BorderThickness = 1;
+            this.txtAdults.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAdults.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAdults.ForeColor = System.Drawing.Color.Black;
+            this.txtAdults.isPassword = false;
+            this.txtAdults.Location = new System.Drawing.Point(247, 290);
+            this.txtAdults.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAdults.Name = "txtAdults";
+            this.txtAdults.Size = new System.Drawing.Size(560, 75);
+            this.txtAdults.TabIndex = 105;
+            this.txtAdults.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(178, 431);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(263, 17);
+            this.label11.TabIndex = 106;
+            this.label11.Text = "Activities and Attraction (Cost/Person) :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(576, 386);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.TabIndex = 107;
+            this.label12.Text = "Addult";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(715, 386);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 17);
+            this.label13.TabIndex = 108;
+            this.label13.Text = "Children";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(178, 474);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 17);
+            this.label14.TabIndex = 109;
+            this.label14.Text = "Total :";
+            // 
+            // nadult
+            // 
+            this.nadult.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.nadult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.nadult.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.nadult.BorderThickness = 1;
+            this.nadult.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nadult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.nadult.ForeColor = System.Drawing.Color.Black;
+            this.nadult.isPassword = false;
+            this.nadult.Location = new System.Drawing.Point(579, 425);
+            this.nadult.Margin = new System.Windows.Forms.Padding(4);
+            this.nadult.Name = "nadult";
+            this.nadult.Size = new System.Drawing.Size(48, 28);
+            this.nadult.TabIndex = 110;
+            this.nadult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.nadult.OnValueChanged += new System.EventHandler(this.nadult_OnValueChanged);
+            this.nadult.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nadult_KeyDown);
+            this.nadult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nadult_KeyPress);
+            // 
+            // nchildren
+            // 
+            this.nchildren.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.nchildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.nchildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.nchildren.BorderThickness = 1;
+            this.nchildren.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nchildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.nchildren.ForeColor = System.Drawing.Color.Black;
+            this.nchildren.isPassword = false;
+            this.nchildren.Location = new System.Drawing.Point(724, 425);
+            this.nchildren.Margin = new System.Windows.Forms.Padding(4);
+            this.nchildren.Name = "nchildren";
+            this.nchildren.Size = new System.Drawing.Size(48, 28);
+            this.nchildren.TabIndex = 111;
+            this.nchildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.nchildren.OnValueChanged += new System.EventHandler(this.nchildren_OnValueChanged);
+            // 
+            // tchildren
+            // 
+            this.tchildren.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.tchildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.tchildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.tchildren.BorderThickness = 1;
+            this.tchildren.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tchildren.Enabled = false;
+            this.tchildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tchildren.ForeColor = System.Drawing.Color.Black;
+            this.tchildren.isPassword = false;
+            this.tchildren.Location = new System.Drawing.Point(724, 471);
+            this.tchildren.Margin = new System.Windows.Forms.Padding(4);
+            this.tchildren.Name = "tchildren";
+            this.tchildren.Size = new System.Drawing.Size(48, 28);
+            this.tchildren.TabIndex = 113;
+            this.tchildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // tadult
+            // 
+            this.tadult.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.tadult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.tadult.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.tadult.BorderThickness = 1;
+            this.tadult.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tadult.Enabled = false;
+            this.tadult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tadult.ForeColor = System.Drawing.Color.Black;
+            this.tadult.isPassword = false;
+            this.tadult.Location = new System.Drawing.Point(579, 471);
+            this.tadult.Margin = new System.Windows.Forms.Padding(4);
+            this.tadult.Name = "tadult";
+            this.tadult.Size = new System.Drawing.Size(48, 28);
+            this.tadult.TabIndex = 112;
+            this.tadult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.panel2.Location = new System.Drawing.Point(116, 561);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(718, 2);
+            this.panel2.TabIndex = 7;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(178, 610);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 17);
+            this.label15.TabIndex = 114;
+            this.label15.Text = "Hotel :";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(399, 610);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 17);
+            this.label16.TabIndex = 115;
+            this.label16.Text = "Single :";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(492, 263);
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(572, 610);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 13);
-            this.label17.TabIndex = 121;
-            this.label17.Text = "Double Room ";
+            this.label17.Size = new System.Drawing.Size(63, 17);
+            this.label17.TabIndex = 116;
+            this.label17.Text = "Double :";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(672, 263);
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(759, 609);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 13);
-            this.label18.TabIndex = 122;
-            this.label18.Text = "Triple Room ";
+            this.label18.Size = new System.Drawing.Size(48, 17);
+            this.label18.TabIndex = 117;
+            this.label18.Text = "Triple :";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(234, 609);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 118;
+            // 
+            // bunifuMetroTextbox1
+            // 
+            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox1.BorderThickness = 1;
+            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox1.isPassword = false;
+            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(449, 610);
+            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
+            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(91, 20);
+            this.bunifuMetroTextbox1.TabIndex = 119;
+            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMetroTextbox2
+            // 
+            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox2.BorderThickness = 1;
+            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox2.isPassword = false;
+            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(640, 610);
+            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
+            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(91, 20);
+            this.bunifuMetroTextbox2.TabIndex = 120;
+            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMetroTextbox3
+            // 
+            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox3.BorderThickness = 1;
+            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox3.isPassword = false;
+            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(814, 610);
+            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
+            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(91, 20);
+            this.bunifuMetroTextbox3.TabIndex = 121;
+            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(178, 658);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(82, 17);
+            this.label19.TabIndex = 122;
+            this.label19.Text = "Extra Meal :";
+            // 
+            // bunifuMetroTextbox4
+            // 
+            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox4.BorderThickness = 1;
+            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox4.isPassword = false;
+            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(814, 658);
+            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
+            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(91, 20);
+            this.bunifuMetroTextbox4.TabIndex = 128;
+            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMetroTextbox5
+            // 
+            this.bunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.bunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox5.BorderThickness = 1;
+            this.bunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox5.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox5.isPassword = false;
+            this.bunifuMetroTextbox5.Location = new System.Drawing.Point(640, 658);
+            this.bunifuMetroTextbox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox5.Name = "bunifuMetroTextbox5";
+            this.bunifuMetroTextbox5.Size = new System.Drawing.Size(91, 20);
+            this.bunifuMetroTextbox5.TabIndex = 127;
+            this.bunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMetroTextbox6
+            // 
+            this.bunifuMetroTextbox6.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox6.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.bunifuMetroTextbox6.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.bunifuMetroTextbox6.BorderThickness = 1;
+            this.bunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMetroTextbox6.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox6.isPassword = false;
+            this.bunifuMetroTextbox6.Location = new System.Drawing.Point(449, 658);
+            this.bunifuMetroTextbox6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox6.Name = "bunifuMetroTextbox6";
+            this.bunifuMetroTextbox6.Size = new System.Drawing.Size(91, 20);
+            this.bunifuMetroTextbox6.TabIndex = 126;
+            this.bunifuMetroTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(759, 657);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 17);
+            this.label21.TabIndex = 125;
+            this.label21.Text = "Dinner :";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(572, 658);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(54, 17);
+            this.label22.TabIndex = 124;
+            this.label22.Text = "Lunch :";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(372, 661);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(80, 17);
+            this.label23.TabIndex = 123;
+            this.label23.Text = "Break Fast :";
             // 
             // PlannerControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cmbAHotel);
-            this.Controls.Add(this.cmbAArea);
-            this.Controls.Add(this.cmbALocation);
-            this.Controls.Add(this.txtAEndTime);
-            this.Controls.Add(this.txtAStartTime);
-            this.Controls.Add(this.dtpADate);
-            this.Controls.Add(this.txtAId);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.bunifuMetroTextbox4);
+            this.Controls.Add(this.bunifuMetroTextbox5);
+            this.Controls.Add(this.bunifuMetroTextbox6);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.bunifuMetroTextbox3);
+            this.Controls.Add(this.bunifuMetroTextbox2);
+            this.Controls.Add(this.bunifuMetroTextbox1);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.tchildren);
+            this.Controls.Add(this.tadult);
+            this.Controls.Add(this.nchildren);
+            this.Controls.Add(this.nadult);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtAdults);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.Print);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.starCategory);
+            this.Controls.Add(this.bofChild);
+            this.Controls.Add(this.nofAdults);
+            this.Controls.Add(this.triple);
+            this.Controls.Add(this.ddouble);
+            this.Controls.Add(this.single);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "PlannerControl3";
-            this.Size = new System.Drawing.Size(973, 576);
+            this.Size = new System.Drawing.Size(966, 741);
             this.Load += new System.EventHandler(this.PlannerControl3_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,45 +638,49 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button Print;
-        private System.Windows.Forms.Button btnAddDayPlan;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblSelectedDay;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSingle;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label single;
+        public System.Windows.Forms.Label starCategory;
+        public System.Windows.Forms.Label bofChild;
+        public System.Windows.Forms.Label nofAdults;
+        public System.Windows.Forms.Label triple;
+        public System.Windows.Forms.Label ddouble;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label10;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAdults;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private Bunifu.Framework.UI.BunifuMetroTextbox nadult;
+        private Bunifu.Framework.UI.BunifuMetroTextbox nchildren;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tchildren;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tadult;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtAId;
-        private System.Windows.Forms.DateTimePicker dtpADate;
-        private System.Windows.Forms.TextBox txtAStartTime;
-        private System.Windows.Forms.TextBox txtAEndTime;
-        private System.Windows.Forms.ComboBox cmbALocation;
-        private System.Windows.Forms.ComboBox cmbAArea;
-        private System.Windows.Forms.ComboBox cmbAHotel;
-        private System.Windows.Forms.DateTimePicker dtpStart;
-        private Bunifu.Framework.UI.BunifuMetroTextbox endTime;
-        private Bunifu.Framework.UI.BunifuMetroTextbox startTme;
-        private System.Windows.Forms.ComboBox cmbHotels;
-        private System.Windows.Forms.ComboBox cmbArea;
-        private System.Windows.Forms.ComboBox cmbLocation;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtTriple;
-        private System.Windows.Forms.TextBox txtDouble;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
+        private System.Windows.Forms.Label label19;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox5;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox6;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
     }
 }

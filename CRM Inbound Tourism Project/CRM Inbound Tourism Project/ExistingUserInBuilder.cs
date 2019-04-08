@@ -24,6 +24,7 @@ namespace CRM_Inbound_Tourism_Project
         public ExistingUserInBuilder()
         {
             InitializeComponent();
+
         }
 
         private void searchExistingCustomer() {
@@ -86,6 +87,8 @@ namespace CRM_Inbound_Tourism_Project
                 plannerControl2.UserMail = (userMail + date);
                 this.Controls.Clear();
                 this.Controls.Add(plannerControl2);
+                
+                
             }
             else {
                 MessageBox.Show("please select a user to proceed ");

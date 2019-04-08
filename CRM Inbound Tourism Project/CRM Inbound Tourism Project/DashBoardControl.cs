@@ -17,28 +17,45 @@ namespace CRM_Inbound_Tourism_Project
         {
             InitializeComponent();
 
-            float x1 = 11;
-            float x2 = 21;
-            float x3 = 39;
-            float x4 = 5;
-            float x5 = 6;
-            float x6 = 2;
-            float x7 = 30;
-            float x8 = 32;
-            float x9 = 40;
-            float x10 = 42;
+           // ListView();
+            graph();
 
+            
 
+        }
+        private void ListView()
+        {
+            HomePropertiesControl[] homePropertiesControls = new HomePropertiesControl[20];
+            for(int i=0; i<homePropertiesControls.Length; i++)
+            {
+                homePropertiesControls[i] = new HomePropertiesControl();
+                homePropertiesControls[i].Name = "Nasik";
+                homePropertiesControls[i].ArrivalDate = "02.2.2019";
+                homePropertiesControls[i].DepatureDate = "30.2.2019";
+                homePropertiesControls[i].PassportNo = "889898-98098";
+                if (flowLayoutPanel1.Controls.Count < 0)
+                {
+                    flowLayoutPanel1.Controls.Clear();
+                }
+                else
+                flowLayoutPanel1.Controls.Add(homePropertiesControls[i]);
+                
+                
+
+            }
+        }
+        public void graph()
+        {
             var chart = chart1.ChartAreas[0];
             chart.AxisX.IntervalType = DateTimeIntervalType.Number;
-            
+
 
             //chart.AxisX.LabelStyle.Format = "";
             //chart.AxisY.LabelStyle.Format = "";
             //chart.AxisY.LabelStyle.IsEndLabelVisible = true;
             chart.AxisX.MajorGrid.Enabled = false;
             chart.AxisX.Minimum = 1;
-           // chart.AxisX.Maximum = 12;
+            // chart.AxisX.Maximum = 12;
             chart.AxisY.Minimum = 0;
             //chart.AxisY.Maximum = 50;
             chart.AxisX.Interval = 1;
@@ -70,54 +87,10 @@ namespace CRM_Inbound_Tourism_Project
             chart1.Series["Graph 2"].Points.AddXY("D8", "25");
             chart1.Series["Graph 2"].Points.AddXY("D9", "10");
             chart1.Series["Graph 2"].Points.AddXY("D10", "5");
-
-
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            float x1 = 11;
-            float x2 = 21;
-            float x3 = 39;
-            float x4 = 5;
-            float x5 = 6;
-            float x6 = 2;
-            float x7 = 30;
-            float x8 = 32;
-            float x9 = 40;
-            float x10 = 42;
-
-
-            var chart = chart1.ChartAreas[0];
-            chart.AxisX.IntervalType = DateTimeIntervalType.Number;
-
-            chart.AxisX.LabelStyle.Format = "";
-            chart.AxisY.LabelStyle.Format = "";
-            chart.AxisY.LabelStyle.IsEndLabelVisible = true;
-
-            chart.AxisX.Minimum = 1;
-            chart.AxisX.Maximum = 12;
-            chart.AxisY.Minimum = 0;
-            chart.AxisY.Maximum = 50;
-            chart.AxisX.Interval = 1;
-            chart.AxisY.Interval = 5;
-
-            chart1.Series.Add("HA NQ1");
-            chart1.Series["HA NQ1"].ChartType = SeriesChartType.Line;
-            chart1.Series["HA NQ1"].Color = Color.Red;
-            chart1.Series[0].IsVisibleInLegend = false;
-
-            chart1.Series["HA NQ1"].Points.AddXY(1, x1);
-            chart1.Series["HA NQ1"].Points.AddXY(2, x2);
-            chart1.Series["HA NQ1"].Points.AddXY(3, x3);
-            chart1.Series["HA NQ1"].Points.AddXY(4, x4);
-            chart1.Series["HA NQ1"].Points.AddXY(5, x5);
-            chart1.Series["HA NQ1"].Points.AddXY(6, x6);
-            chart1.Series["HA NQ1"].Points.AddXY(7, x7);
-            chart1.Series["HA NQ1"].Points.AddXY(8, x8);
-            chart1.Series["HA NQ1"].Points.AddXY(9, x9);
-            chart1.Series["HA NQ1"].Points.AddXY(10, x10);
-
+           
 
 
         }
@@ -125,6 +98,16 @@ namespace CRM_Inbound_Tourism_Project
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DashBoardControl_Load(object sender, EventArgs e)
+        {
+            ListView();
         }
     }
 }

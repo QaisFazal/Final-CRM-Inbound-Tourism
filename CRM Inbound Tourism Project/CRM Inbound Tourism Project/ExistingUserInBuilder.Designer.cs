@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.btnEdit = new System.Windows.Forms.Button();
             this.dgvAddUser = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblItineraraybuilder = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,21 +66,6 @@
             this.dgvAddUser.Size = new System.Drawing.Size(743, 192);
             this.dgvAddUser.TabIndex = 75;
             this.dgvAddUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAddUser_CellContentClick);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnSearch.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.search;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(613, 116);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(155, 27);
-            this.btnSearch.TabIndex = 74;
-            this.btnSearch.Text = "     SEARCH USER";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tbSearch
             // 
@@ -145,11 +130,25 @@
             this.label3.TabIndex = 87;
             this.label3.Text = "In order to select a user, click on user row (After search)";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSearch.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.search;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(613, 116);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(155, 27);
+            this.btnSearch.TabIndex = 74;
+            this.btnSearch.Text = "     SEARCH USER";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // ExistingUserInBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,7 +160,7 @@
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.dgvAddUser);
             this.Name = "ExistingUserInBuilder";
-            this.Size = new System.Drawing.Size(949, 576);
+            this.Size = new System.Drawing.Size(915, 576);
             this.Load += new System.EventHandler(this.ExistingUserInBuilder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddUser)).EndInit();
             this.ResumeLayout(false);

@@ -203,6 +203,7 @@
             // 
             // txtNoOfDays
             // 
+            this.txtNoOfDays.BackColor = System.Drawing.Color.White;
             this.txtNoOfDays.Location = new System.Drawing.Point(213, 278);
             this.txtNoOfDays.Name = "txtNoOfDays";
             this.txtNoOfDays.ReadOnly = true;
@@ -335,9 +336,9 @@
             this.txtDepatureDate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.txtDepatureDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.txtDepatureDate.FormatCustom = null;
-            this.txtDepatureDate.Location = new System.Drawing.Point(666, 97);
+            this.txtDepatureDate.Location = new System.Drawing.Point(666, 99);
             this.txtDepatureDate.Name = "txtDepatureDate";
-            this.txtDepatureDate.Size = new System.Drawing.Size(200, 20);
+            this.txtDepatureDate.Size = new System.Drawing.Size(259, 20);
             this.txtDepatureDate.TabIndex = 103;
             this.txtDepatureDate.Value = new System.DateTime(2019, 4, 3, 4, 6, 19, 397);
             this.txtDepatureDate.onValueChanged += new System.EventHandler(this.txtDepatureDate_onValueChanged);
@@ -351,7 +352,7 @@
             this.txtArrivalDate.FormatCustom = null;
             this.txtArrivalDate.Location = new System.Drawing.Point(190, 99);
             this.txtArrivalDate.Name = "txtArrivalDate";
-            this.txtArrivalDate.Size = new System.Drawing.Size(217, 20);
+            this.txtArrivalDate.Size = new System.Drawing.Size(262, 20);
             this.txtArrivalDate.TabIndex = 102;
             this.txtArrivalDate.Value = new System.DateTime(2019, 4, 3, 4, 6, 19, 397);
             this.txtArrivalDate.onValueChanged += new System.EventHandler(this.txtArrivalDate_onValueChanged);
@@ -454,7 +455,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtChildrents;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtAge;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtNoOfRooms;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtSingle;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtDouble;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTriple;
         private Bunifu.Framework.UI.BunifuDatepicker txtDepatureDate;
@@ -462,5 +462,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cmbMeals;
         private System.Windows.Forms.ComboBox cmbCategary;
+        public Bunifu.Framework.UI.BunifuMetroTextbox txtSingle;
     }
 }

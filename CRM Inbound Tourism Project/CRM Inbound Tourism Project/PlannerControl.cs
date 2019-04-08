@@ -15,13 +15,14 @@ namespace CRM_Inbound_Tourism_Project
         public PlannerControl()
         {
             InitializeComponent();
+           
             
         }
 
         private void PlannerControl_Load(object sender, EventArgs e)
         {
             addUserInBuilder1.Visible = false;
-            existingUserInBuilder1.Visible = false;
+            existingUserInBuilder1.Visible = true;
 
         }
 
@@ -66,6 +67,24 @@ namespace CRM_Inbound_Tourism_Project
             //panel7.Controls["ExistingUserInBuilder"].BringToFront();
             //AddUserInBuilder au = new AddUserInBuilder();
             //au.Visible = false;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+            addUserInBuilder1.Visible = true;
+            addUserInBuilder1.BringToFront();
+            existingUserInBuilder1.Visible = false;
+            panel4.Visible = false;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
