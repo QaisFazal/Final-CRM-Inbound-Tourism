@@ -39,8 +39,8 @@
             this.btnItinerarry = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.addUserControl2 = new CRM_Inbound_Tourism_Project.AddUserControl();
             this.locationControl3 = new CRM_Inbound_Tourism_Project.LocationControl();
             this.hotalControl3 = new CRM_Inbound_Tourism_Project.HotalControl();
@@ -223,18 +223,6 @@
             this.panel1.Size = new System.Drawing.Size(800, 26);
             this.panel1.TabIndex = 1;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.off__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(768, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 23);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -247,8 +235,21 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.off__2_;
+            this.pictureBox2.Location = new System.Drawing.Point(768, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 23);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // addUserControl2
             // 
+            this.addUserControl2.AutoScroll = true;
             this.addUserControl2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.addUserControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addUserControl2.Location = new System.Drawing.Point(53, 26);

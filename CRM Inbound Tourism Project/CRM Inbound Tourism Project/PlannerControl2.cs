@@ -15,6 +15,7 @@ namespace CRM_Inbound_Tourism_Project
 
         private PlannerControl3 plannerControl3;
         private PlannerControl2 plannerControl2;
+        private PlannerControl plannerControl;
         private ExistingUserInBuilder existingUserInBuilder;
 
         private static String userMail = null;
@@ -70,7 +71,7 @@ namespace CRM_Inbound_Tourism_Project
 
         private void PlannerControl2_Load(object sender, EventArgs e)
         {
-            //plannerControl31.Hide();
+           // plannerControl31.Visible = false;
         }
 
         public String UserMail
@@ -115,12 +116,21 @@ namespace CRM_Inbound_Tourism_Project
             String depatureDate = txtDepatureDate.Value.Date.ToShortDateString();
 
             PlannerControl3 plannerControl3 = new PlannerControl3();
+            // plannerControl3.Dock = DockStyle.Top;
+           // existingUserInBuilder.Controls.Add(plannerControl3);
+            plannerControl3.BringToFront();
+            //plannerControl3.Dock.
+            //PlannerControl2 plannerControl2 = new PlannerControl2();
+           // plannerControl2.UserMail = (userMail + date);
+            //this.Controls.Clear();
+            //this.Controls.Add(plannerControl3);
             plannerControl3.single.Text = txtSingle.Text;
             plannerControl3.ddouble.Text = txtDouble.Text;
             plannerControl3.triple.Text = txtTriple.Text;
             plannerControl3.nofAdults.Text = txtAdults.Text;
             plannerControl3.bofChild.Text = txtChildrents.Text;
             plannerControl3.starCategory.Text = cmbCategary.Text;
+            plannerControl3.l3.Text = txtNoOfDays.Text;
 
 
             //plannerControl3.setDepatureDate = depatureDate;

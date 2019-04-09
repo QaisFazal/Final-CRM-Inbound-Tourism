@@ -129,4 +129,3 @@ C:\Users\Nimzan\Source\Repos\QaisFazal\Final-CRM-Inbound-Tourism\CRM Inbound Tou
 C:\Users\Nimzan\Source\Repos\QaisFazal\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.csproj.CopyComplete
 C:\Users\Nimzan\Source\Repos\QaisFazal\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.exe
 C:\Users\Nimzan\Source\Repos\QaisFazal\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.pdb
-C:\Users\Nimzan\Source\Repos\QaisFazal\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.csprojAssemblyReference.cache

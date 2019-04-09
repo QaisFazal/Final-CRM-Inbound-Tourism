@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblStarCategory = new System.Windows.Forms.Label();
             this.lblMealPreferance = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.cmbMeals = new System.Windows.Forms.ComboBox();
             this.cmbCategary = new System.Windows.Forms.ComboBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
             // panel1
@@ -206,7 +208,6 @@
             this.txtNoOfDays.BackColor = System.Drawing.Color.White;
             this.txtNoOfDays.Location = new System.Drawing.Point(213, 278);
             this.txtNoOfDays.Name = "txtNoOfDays";
-            this.txtNoOfDays.ReadOnly = true;
             this.txtNoOfDays.Size = new System.Drawing.Size(157, 20);
             this.txtNoOfDays.TabIndex = 87;
             // 
@@ -395,6 +396,11 @@
             this.cmbCategary.Size = new System.Drawing.Size(307, 21);
             this.cmbCategary.TabIndex = 115;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 12;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // PlannerControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,7 +434,7 @@
             this.Controls.Add(this.lblDepatureDate);
             this.Controls.Add(this.lblArrivalDate);
             this.Name = "PlannerControl2";
-            this.Size = new System.Drawing.Size(966, 576);
+            this.Size = new System.Drawing.Size(1339, 808);
             this.Load += new System.EventHandler(this.PlannerControl2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -463,5 +469,6 @@
         private System.Windows.Forms.ComboBox cmbMeals;
         private System.Windows.Forms.ComboBox cmbCategary;
         public Bunifu.Framework.UI.BunifuMetroTextbox txtSingle;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

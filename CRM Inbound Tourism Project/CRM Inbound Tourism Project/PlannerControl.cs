@@ -22,6 +22,7 @@ namespace CRM_Inbound_Tourism_Project
         private void PlannerControl_Load(object sender, EventArgs e)
         {
             addUserInBuilder1.Visible = false;
+            //plannerControl31.Visible = false;
             existingUserInBuilder1.Visible = true;
 
         }
@@ -83,6 +84,11 @@ namespace CRM_Inbound_Tourism_Project
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void existingUserInBuilder1_Load(object sender, EventArgs e)
         {
 
         }
