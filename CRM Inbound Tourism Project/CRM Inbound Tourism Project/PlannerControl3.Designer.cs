@@ -46,39 +46,46 @@
             this.ddouble = new System.Windows.Forms.Label();
             this.single = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtAdults = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDescription = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.nadult = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.nchildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.tchildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.tadult = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtAdult = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtChildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtTotChildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtTotAdult = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtSingleRoomHotel = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDoubleRoomHotel = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtTripleRoomHotel = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label19 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDinner = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtLunch = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtBreakFast = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAddInfo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.l1 = new System.Windows.Forms.Label();
             this.l2 = new System.Windows.Forms.Label();
             this.l3 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox7 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox8 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtFrom = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtTo = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblSingleRoom = new System.Windows.Forms.Label();
+            this.lblDoubleRoom = new System.Windows.Forms.Label();
+            this.lblTripleRoom = new System.Windows.Forms.Label();
+            this.lblAdults = new System.Windows.Forms.Label();
+            this.lblChildrens = new System.Windows.Forms.Label();
+            this.lblStarCategory = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -240,22 +247,22 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Description:";
             // 
-            // txtAdults
+            // txtDescription
             // 
-            this.txtAdults.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtAdults.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtAdults.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtAdults.BorderThickness = 1;
-            this.txtAdults.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAdults.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtAdults.ForeColor = System.Drawing.Color.Black;
-            this.txtAdults.isPassword = false;
-            this.txtAdults.Location = new System.Drawing.Point(247, 290);
-            this.txtAdults.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAdults.Name = "txtAdults";
-            this.txtAdults.Size = new System.Drawing.Size(560, 75);
-            this.txtAdults.TabIndex = 105;
-            this.txtAdults.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDescription.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtDescription.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtDescription.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtDescription.BorderThickness = 1;
+            this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDescription.ForeColor = System.Drawing.Color.Black;
+            this.txtDescription.isPassword = false;
+            this.txtDescription.Location = new System.Drawing.Point(247, 290);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(560, 75);
+            this.txtDescription.TabIndex = 105;
+            this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label11
             // 
@@ -297,79 +304,79 @@
             this.label14.TabIndex = 109;
             this.label14.Text = "Total :";
             // 
-            // nadult
+            // txtAdult
             // 
-            this.nadult.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.nadult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.nadult.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.nadult.BorderThickness = 1;
-            this.nadult.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nadult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.nadult.ForeColor = System.Drawing.Color.Black;
-            this.nadult.isPassword = false;
-            this.nadult.Location = new System.Drawing.Point(579, 425);
-            this.nadult.Margin = new System.Windows.Forms.Padding(4);
-            this.nadult.Name = "nadult";
-            this.nadult.Size = new System.Drawing.Size(48, 28);
-            this.nadult.TabIndex = 110;
-            this.nadult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.nadult.OnValueChanged += new System.EventHandler(this.nadult_OnValueChanged);
-            this.nadult.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nadult_KeyDown);
-            this.nadult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nadult_KeyPress);
+            this.txtAdult.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtAdult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtAdult.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtAdult.BorderThickness = 1;
+            this.txtAdult.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAdult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAdult.ForeColor = System.Drawing.Color.Black;
+            this.txtAdult.isPassword = false;
+            this.txtAdult.Location = new System.Drawing.Point(579, 425);
+            this.txtAdult.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAdult.Name = "txtAdult";
+            this.txtAdult.Size = new System.Drawing.Size(48, 28);
+            this.txtAdult.TabIndex = 110;
+            this.txtAdult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAdult.OnValueChanged += new System.EventHandler(this.nadult_OnValueChanged);
+            this.txtAdult.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nadult_KeyDown);
+            this.txtAdult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nadult_KeyPress);
             // 
-            // nchildren
+            // txtChildren
             // 
-            this.nchildren.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.nchildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.nchildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.nchildren.BorderThickness = 1;
-            this.nchildren.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nchildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.nchildren.ForeColor = System.Drawing.Color.Black;
-            this.nchildren.isPassword = false;
-            this.nchildren.Location = new System.Drawing.Point(724, 425);
-            this.nchildren.Margin = new System.Windows.Forms.Padding(4);
-            this.nchildren.Name = "nchildren";
-            this.nchildren.Size = new System.Drawing.Size(48, 28);
-            this.nchildren.TabIndex = 111;
-            this.nchildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.nchildren.OnValueChanged += new System.EventHandler(this.nchildren_OnValueChanged);
+            this.txtChildren.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtChildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtChildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtChildren.BorderThickness = 1;
+            this.txtChildren.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtChildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtChildren.ForeColor = System.Drawing.Color.Black;
+            this.txtChildren.isPassword = false;
+            this.txtChildren.Location = new System.Drawing.Point(724, 425);
+            this.txtChildren.Margin = new System.Windows.Forms.Padding(4);
+            this.txtChildren.Name = "txtChildren";
+            this.txtChildren.Size = new System.Drawing.Size(48, 28);
+            this.txtChildren.TabIndex = 111;
+            this.txtChildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtChildren.OnValueChanged += new System.EventHandler(this.nchildren_OnValueChanged);
             // 
-            // tchildren
+            // txtTotChildren
             // 
-            this.tchildren.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.tchildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.tchildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.tchildren.BorderThickness = 1;
-            this.tchildren.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tchildren.Enabled = false;
-            this.tchildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tchildren.ForeColor = System.Drawing.Color.Black;
-            this.tchildren.isPassword = false;
-            this.tchildren.Location = new System.Drawing.Point(724, 471);
-            this.tchildren.Margin = new System.Windows.Forms.Padding(4);
-            this.tchildren.Name = "tchildren";
-            this.tchildren.Size = new System.Drawing.Size(48, 28);
-            this.tchildren.TabIndex = 113;
-            this.tchildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTotChildren.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtTotChildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtTotChildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtTotChildren.BorderThickness = 1;
+            this.txtTotChildren.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotChildren.Enabled = false;
+            this.txtTotChildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTotChildren.ForeColor = System.Drawing.Color.Black;
+            this.txtTotChildren.isPassword = false;
+            this.txtTotChildren.Location = new System.Drawing.Point(724, 471);
+            this.txtTotChildren.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotChildren.Name = "txtTotChildren";
+            this.txtTotChildren.Size = new System.Drawing.Size(48, 28);
+            this.txtTotChildren.TabIndex = 113;
+            this.txtTotChildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // tadult
+            // txtTotAdult
             // 
-            this.tadult.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.tadult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.tadult.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.tadult.BorderThickness = 1;
-            this.tadult.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tadult.Enabled = false;
-            this.tadult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tadult.ForeColor = System.Drawing.Color.Black;
-            this.tadult.isPassword = false;
-            this.tadult.Location = new System.Drawing.Point(579, 471);
-            this.tadult.Margin = new System.Windows.Forms.Padding(4);
-            this.tadult.Name = "tadult";
-            this.tadult.Size = new System.Drawing.Size(48, 28);
-            this.tadult.TabIndex = 112;
-            this.tadult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTotAdult.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtTotAdult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtTotAdult.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtTotAdult.BorderThickness = 1;
+            this.txtTotAdult.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotAdult.Enabled = false;
+            this.txtTotAdult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTotAdult.ForeColor = System.Drawing.Color.Black;
+            this.txtTotAdult.isPassword = false;
+            this.txtTotAdult.Location = new System.Drawing.Point(579, 471);
+            this.txtTotAdult.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotAdult.Name = "txtTotAdult";
+            this.txtTotAdult.Size = new System.Drawing.Size(48, 28);
+            this.txtTotAdult.TabIndex = 112;
+            this.txtTotAdult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label15
             // 
@@ -422,59 +429,59 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 118;
             // 
-            // bunifuMetroTextbox1
+            // txtSingleRoomHotel
             // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox1.BorderThickness = 1;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(447, 535);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(91, 20);
-            this.bunifuMetroTextbox1.TabIndex = 119;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMetroTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox1_OnValueChanged);
+            this.txtSingleRoomHotel.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtSingleRoomHotel.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtSingleRoomHotel.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtSingleRoomHotel.BorderThickness = 1;
+            this.txtSingleRoomHotel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSingleRoomHotel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSingleRoomHotel.ForeColor = System.Drawing.Color.Black;
+            this.txtSingleRoomHotel.isPassword = false;
+            this.txtSingleRoomHotel.Location = new System.Drawing.Point(447, 535);
+            this.txtSingleRoomHotel.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSingleRoomHotel.Name = "txtSingleRoomHotel";
+            this.txtSingleRoomHotel.Size = new System.Drawing.Size(91, 20);
+            this.txtSingleRoomHotel.TabIndex = 119;
+            this.txtSingleRoomHotel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSingleRoomHotel.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox1_OnValueChanged);
             // 
-            // bunifuMetroTextbox2
+            // txtDoubleRoomHotel
             // 
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox2.BorderThickness = 1;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(638, 535);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(91, 20);
-            this.bunifuMetroTextbox2.TabIndex = 120;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMetroTextbox2.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox2_OnValueChanged);
+            this.txtDoubleRoomHotel.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtDoubleRoomHotel.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtDoubleRoomHotel.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtDoubleRoomHotel.BorderThickness = 1;
+            this.txtDoubleRoomHotel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDoubleRoomHotel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDoubleRoomHotel.ForeColor = System.Drawing.Color.Black;
+            this.txtDoubleRoomHotel.isPassword = false;
+            this.txtDoubleRoomHotel.Location = new System.Drawing.Point(638, 535);
+            this.txtDoubleRoomHotel.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDoubleRoomHotel.Name = "txtDoubleRoomHotel";
+            this.txtDoubleRoomHotel.Size = new System.Drawing.Size(91, 20);
+            this.txtDoubleRoomHotel.TabIndex = 120;
+            this.txtDoubleRoomHotel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDoubleRoomHotel.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox2_OnValueChanged);
             // 
-            // bunifuMetroTextbox3
+            // txtTripleRoomHotel
             // 
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox3.BorderThickness = 1;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(812, 535);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(91, 20);
-            this.bunifuMetroTextbox3.TabIndex = 121;
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMetroTextbox3.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox3_OnValueChanged);
+            this.txtTripleRoomHotel.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtTripleRoomHotel.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtTripleRoomHotel.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtTripleRoomHotel.BorderThickness = 1;
+            this.txtTripleRoomHotel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTripleRoomHotel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTripleRoomHotel.ForeColor = System.Drawing.Color.Black;
+            this.txtTripleRoomHotel.isPassword = false;
+            this.txtTripleRoomHotel.Location = new System.Drawing.Point(812, 535);
+            this.txtTripleRoomHotel.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTripleRoomHotel.Name = "txtTripleRoomHotel";
+            this.txtTripleRoomHotel.Size = new System.Drawing.Size(91, 20);
+            this.txtTripleRoomHotel.TabIndex = 121;
+            this.txtTripleRoomHotel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTripleRoomHotel.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox3_OnValueChanged);
             // 
             // label19
             // 
@@ -487,59 +494,59 @@
             this.label19.Text = "Extra Meal :";
             this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
-            // bunifuMetroTextbox4
+            // txtDinner
             // 
-            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox4.BorderThickness = 1;
-            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(812, 583);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(91, 20);
-            this.bunifuMetroTextbox4.TabIndex = 128;
-            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMetroTextbox4.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox4_OnValueChanged);
+            this.txtDinner.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtDinner.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtDinner.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtDinner.BorderThickness = 1;
+            this.txtDinner.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDinner.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDinner.ForeColor = System.Drawing.Color.Black;
+            this.txtDinner.isPassword = false;
+            this.txtDinner.Location = new System.Drawing.Point(812, 583);
+            this.txtDinner.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDinner.Name = "txtDinner";
+            this.txtDinner.Size = new System.Drawing.Size(91, 20);
+            this.txtDinner.TabIndex = 128;
+            this.txtDinner.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDinner.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox4_OnValueChanged);
             // 
-            // bunifuMetroTextbox5
+            // txtLunch
             // 
-            this.bunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox5.BorderThickness = 1;
-            this.bunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox5.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox5.isPassword = false;
-            this.bunifuMetroTextbox5.Location = new System.Drawing.Point(638, 583);
-            this.bunifuMetroTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox5.Name = "bunifuMetroTextbox5";
-            this.bunifuMetroTextbox5.Size = new System.Drawing.Size(91, 20);
-            this.bunifuMetroTextbox5.TabIndex = 127;
-            this.bunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMetroTextbox5.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox5_OnValueChanged);
+            this.txtLunch.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtLunch.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtLunch.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtLunch.BorderThickness = 1;
+            this.txtLunch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLunch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtLunch.ForeColor = System.Drawing.Color.Black;
+            this.txtLunch.isPassword = false;
+            this.txtLunch.Location = new System.Drawing.Point(638, 583);
+            this.txtLunch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLunch.Name = "txtLunch";
+            this.txtLunch.Size = new System.Drawing.Size(91, 20);
+            this.txtLunch.TabIndex = 127;
+            this.txtLunch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtLunch.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox5_OnValueChanged);
             // 
-            // bunifuMetroTextbox6
+            // txtBreakFast
             // 
-            this.bunifuMetroTextbox6.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox6.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox6.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox6.BorderThickness = 1;
-            this.bunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox6.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox6.isPassword = false;
-            this.bunifuMetroTextbox6.Location = new System.Drawing.Point(447, 583);
-            this.bunifuMetroTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox6.Name = "bunifuMetroTextbox6";
-            this.bunifuMetroTextbox6.Size = new System.Drawing.Size(91, 20);
-            this.bunifuMetroTextbox6.TabIndex = 126;
-            this.bunifuMetroTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMetroTextbox6.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox6_OnValueChanged);
+            this.txtBreakFast.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtBreakFast.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtBreakFast.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtBreakFast.BorderThickness = 1;
+            this.txtBreakFast.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBreakFast.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBreakFast.ForeColor = System.Drawing.Color.Black;
+            this.txtBreakFast.isPassword = false;
+            this.txtBreakFast.Location = new System.Drawing.Point(447, 583);
+            this.txtBreakFast.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBreakFast.Name = "txtBreakFast";
+            this.txtBreakFast.Size = new System.Drawing.Size(91, 20);
+            this.txtBreakFast.TabIndex = 126;
+            this.txtBreakFast.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBreakFast.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox6_OnValueChanged);
             // 
             // label21
             // 
@@ -573,31 +580,31 @@
             this.label23.Text = "Break Fast :";
             this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
-            // bunifuThinButton21
+            // btnAddInfo
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Add Info";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SaddleBrown;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(722, 646);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
-            this.bunifuThinButton21.TabIndex = 129;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            this.btnAddInfo.ActiveBorderThickness = 1;
+            this.btnAddInfo.ActiveCornerRadius = 20;
+            this.btnAddInfo.ActiveFillColor = System.Drawing.Color.SaddleBrown;
+            this.btnAddInfo.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddInfo.ActiveLineColor = System.Drawing.Color.SaddleBrown;
+            this.btnAddInfo.BackColor = System.Drawing.Color.White;
+            this.btnAddInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddInfo.BackgroundImage")));
+            this.btnAddInfo.ButtonText = "Add Info";
+            this.btnAddInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddInfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddInfo.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnAddInfo.IdleBorderThickness = 1;
+            this.btnAddInfo.IdleCornerRadius = 20;
+            this.btnAddInfo.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddInfo.IdleForecolor = System.Drawing.Color.SaddleBrown;
+            this.btnAddInfo.IdleLineColor = System.Drawing.Color.SaddleBrown;
+            this.btnAddInfo.Location = new System.Drawing.Point(722, 646);
+            this.btnAddInfo.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddInfo.Name = "btnAddInfo";
+            this.btnAddInfo.Size = new System.Drawing.Size(181, 41);
+            this.btnAddInfo.TabIndex = 129;
+            this.btnAddInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddInfo.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // panel2
             // 
@@ -607,13 +614,13 @@
             this.panel2.Size = new System.Drawing.Size(718, 2);
             this.panel2.TabIndex = 7;
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(181, 791);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(624, 150);
-            this.dataGridView1.TabIndex = 130;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(181, 791);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(624, 150);
+            this.dataGridView.TabIndex = 130;
             // 
             // l1
             // 
@@ -644,39 +651,111 @@
             this.l3.Size = new System.Drawing.Size(43, 23);
             this.l3.TabIndex = 133;
             // 
-            // bunifuMetroTextbox7
+            // txtFrom
             // 
-            this.bunifuMetroTextbox7.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox7.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox7.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox7.BorderThickness = 1;
-            this.bunifuMetroTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox7.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox7.isPassword = false;
-            this.bunifuMetroTextbox7.Location = new System.Drawing.Point(247, 217);
-            this.bunifuMetroTextbox7.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox7.Name = "bunifuMetroTextbox7";
-            this.bunifuMetroTextbox7.Size = new System.Drawing.Size(129, 20);
-            this.bunifuMetroTextbox7.TabIndex = 134;
-            this.bunifuMetroTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFrom.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtFrom.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtFrom.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtFrom.BorderThickness = 1;
+            this.txtFrom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFrom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtFrom.ForeColor = System.Drawing.Color.Black;
+            this.txtFrom.isPassword = false;
+            this.txtFrom.Location = new System.Drawing.Point(247, 217);
+            this.txtFrom.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFrom.Name = "txtFrom";
+            this.txtFrom.Size = new System.Drawing.Size(129, 20);
+            this.txtFrom.TabIndex = 134;
+            this.txtFrom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFrom.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox7_OnValueChanged);
             // 
-            // bunifuMetroTextbox8
+            // txtTo
             // 
-            this.bunifuMetroTextbox8.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox8.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.bunifuMetroTextbox8.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.bunifuMetroTextbox8.BorderThickness = 1;
-            this.bunifuMetroTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox8.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox8.isPassword = false;
-            this.bunifuMetroTextbox8.Location = new System.Drawing.Point(625, 217);
-            this.bunifuMetroTextbox8.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox8.Name = "bunifuMetroTextbox8";
-            this.bunifuMetroTextbox8.Size = new System.Drawing.Size(129, 20);
-            this.bunifuMetroTextbox8.TabIndex = 135;
-            this.bunifuMetroTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTo.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtTo.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtTo.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtTo.BorderThickness = 1;
+            this.txtTo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTo.ForeColor = System.Drawing.Color.Black;
+            this.txtTo.isPassword = false;
+            this.txtTo.Location = new System.Drawing.Point(625, 217);
+            this.txtTo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTo.Name = "txtTo";
+            this.txtTo.Size = new System.Drawing.Size(129, 20);
+            this.txtTo.TabIndex = 135;
+            this.txtTo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.back;
+            this.button1.Location = new System.Drawing.Point(872, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 136;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lblSingleRoom
+            // 
+            this.lblSingleRoom.AutoSize = true;
+            this.lblSingleRoom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSingleRoom.Location = new System.Drawing.Point(300, 53);
+            this.lblSingleRoom.Name = "lblSingleRoom";
+            this.lblSingleRoom.Size = new System.Drawing.Size(16, 17);
+            this.lblSingleRoom.TabIndex = 137;
+            this.lblSingleRoom.Text = "X";
+            // 
+            // lblDoubleRoom
+            // 
+            this.lblDoubleRoom.AutoSize = true;
+            this.lblDoubleRoom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoubleRoom.Location = new System.Drawing.Point(300, 93);
+            this.lblDoubleRoom.Name = "lblDoubleRoom";
+            this.lblDoubleRoom.Size = new System.Drawing.Size(16, 17);
+            this.lblDoubleRoom.TabIndex = 138;
+            this.lblDoubleRoom.Text = "X";
+            // 
+            // lblTripleRoom
+            // 
+            this.lblTripleRoom.AutoSize = true;
+            this.lblTripleRoom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTripleRoom.Location = new System.Drawing.Point(300, 134);
+            this.lblTripleRoom.Name = "lblTripleRoom";
+            this.lblTripleRoom.Size = new System.Drawing.Size(16, 17);
+            this.lblTripleRoom.TabIndex = 139;
+            this.lblTripleRoom.Text = "X";
+            // 
+            // lblAdults
+            // 
+            this.lblAdults.AutoSize = true;
+            this.lblAdults.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdults.Location = new System.Drawing.Point(697, 56);
+            this.lblAdults.Name = "lblAdults";
+            this.lblAdults.Size = new System.Drawing.Size(16, 17);
+            this.lblAdults.TabIndex = 140;
+            this.lblAdults.Text = "X";
+            // 
+            // lblChildrens
+            // 
+            this.lblChildrens.AutoSize = true;
+            this.lblChildrens.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChildrens.Location = new System.Drawing.Point(697, 93);
+            this.lblChildrens.Name = "lblChildrens";
+            this.lblChildrens.Size = new System.Drawing.Size(16, 17);
+            this.lblChildrens.TabIndex = 141;
+            this.lblChildrens.Text = "X";
+            // 
+            // lblStarCategory
+            // 
+            this.lblStarCategory.AutoSize = true;
+            this.lblStarCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStarCategory.Location = new System.Drawing.Point(697, 134);
+            this.lblStarCategory.Name = "lblStarCategory";
+            this.lblStarCategory.Size = new System.Drawing.Size(16, 17);
+            this.lblStarCategory.TabIndex = 142;
+            this.lblStarCategory.Text = "X";
             // 
             // PlannerControl3
             // 
@@ -685,38 +764,45 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 966);
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bunifuMetroTextbox8);
-            this.Controls.Add(this.bunifuMetroTextbox7);
+            this.Controls.Add(this.lblStarCategory);
+            this.Controls.Add(this.lblChildrens);
+            this.Controls.Add(this.lblAdults);
+            this.Controls.Add(this.lblTripleRoom);
+            this.Controls.Add(this.lblDoubleRoom);
+            this.Controls.Add(this.lblSingleRoom);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtTo);
+            this.Controls.Add(this.txtFrom);
             this.Controls.Add(this.l3);
             this.Controls.Add(this.l2);
             this.Controls.Add(this.l1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuMetroTextbox4);
-            this.Controls.Add(this.bunifuMetroTextbox5);
-            this.Controls.Add(this.bunifuMetroTextbox6);
+            this.Controls.Add(this.btnAddInfo);
+            this.Controls.Add(this.txtDinner);
+            this.Controls.Add(this.txtLunch);
+            this.Controls.Add(this.txtBreakFast);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.bunifuMetroTextbox3);
-            this.Controls.Add(this.bunifuMetroTextbox2);
-            this.Controls.Add(this.bunifuMetroTextbox1);
+            this.Controls.Add(this.txtTripleRoomHotel);
+            this.Controls.Add(this.txtDoubleRoomHotel);
+            this.Controls.Add(this.txtSingleRoomHotel);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.tchildren);
-            this.Controls.Add(this.tadult);
-            this.Controls.Add(this.nchildren);
-            this.Controls.Add(this.nadult);
+            this.Controls.Add(this.txtTotChildren);
+            this.Controls.Add(this.txtTotAdult);
+            this.Controls.Add(this.txtChildren);
+            this.Controls.Add(this.txtAdult);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtAdults);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.starCategory);
             this.Controls.Add(this.bofChild);
@@ -735,9 +821,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PlannerControl3";
-            this.Size = new System.Drawing.Size(1008, 1054);
+            this.Size = new System.Drawing.Size(974, 1054);
             this.Load += new System.EventHandler(this.PlannerControl3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -762,37 +848,44 @@
         public System.Windows.Forms.Label triple;
         public System.Windows.Forms.Label ddouble;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtAdults;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDescription;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private Bunifu.Framework.UI.BunifuMetroTextbox nadult;
-        private Bunifu.Framework.UI.BunifuMetroTextbox nchildren;
-        private Bunifu.Framework.UI.BunifuMetroTextbox tchildren;
-        private Bunifu.Framework.UI.BunifuMetroTextbox tadult;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAdult;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtChildren;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtTotChildren;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtTotAdult;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox comboBox3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtSingleRoomHotel;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDoubleRoomHotel;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtTripleRoomHotel;
         private System.Windows.Forms.Label label19;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox5;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox6;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDinner;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtLunch;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtBreakFast;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAddInfo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label l1;
         private System.Windows.Forms.Label l2;
         public System.Windows.Forms.Label l3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox7;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox8;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtFrom;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtTo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblSingleRoom;
+        private System.Windows.Forms.Label lblDoubleRoom;
+        private System.Windows.Forms.Label lblTripleRoom;
+        private System.Windows.Forms.Label lblAdults;
+        private System.Windows.Forms.Label lblChildrens;
+        private System.Windows.Forms.Label lblStarCategory;
     }
 }

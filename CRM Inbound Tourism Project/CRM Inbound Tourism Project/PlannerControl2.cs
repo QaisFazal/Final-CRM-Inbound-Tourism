@@ -24,7 +24,7 @@ namespace CRM_Inbound_Tourism_Project
         //private ExistingUserInBuilder existingUserInBuilder1;
         
 
-        private String arivaleDate, depatureDate, adults, childrens, ages, noOfDays, noOfRooms, single, doubleR, triple, X;
+        private String arivaleDate, depatureDate, adults, childrens, ages, noOfDays, noOfRooms, single, doubleR, triple;
 
         private void txtArrivalDate_ValueChanged_1(object sender, EventArgs e)
         {
@@ -83,7 +83,7 @@ namespace CRM_Inbound_Tourism_Project
         private void btnNext_Click(object sender, EventArgs e)
         {
 
-            if (txtAdults.Text != "" || txtChildrents.Text != "" || txtAge.Text != "" && txtNoOfDays.Text != "" || txtNoOfRooms.Text != "" || txtSingle.Text != "" || txtDouble.Text != "" || txtTriple.Text != "" || cmbMeals.Text != "" || cmbCategary.Text != "") {
+            if (txtAdults.Text != "" || txtChildrents.Text != ""  || txtNoOfDays.Text != "" || txtNoOfRooms.Text != "" || txtSingle.Text != "" || txtDouble.Text != "" || txtTriple.Text != "" || cmbMeals.Text != "" || cmbCategary.Text != "") {
 
                 addToTrip();
             }
@@ -92,56 +92,31 @@ namespace CRM_Inbound_Tourism_Project
                 MessageBox.Show("Please fill all the fields");
 
             }
-
-
-
-            /*
-             * 
-            addUserInBuilder = new AddUserInBuilder();
-            plannerControl2 = new PlannerControl2();
-            this.Controls.Clear();
-            this.Controls.Add(plannerControl2);
             
-            plannerControl3 = new PlannerControl3();
-            plannerControl2 = new PlannerControl2();
-            this.Controls.Clear();
-            this.Controls.Add(plannerControl3);
-            */
-            //plannerControl31.Show();
         }
 
         private void addToTrip()
         {
             String arrivalDate = txtArrivalDate.Text;
             String depatureDate = txtDepatureDate.Value.Date.ToShortDateString();
+            String triptId = (userMail + date);
 
             PlannerControl3 plannerControl3 = new PlannerControl3();
-            // plannerControl3.Dock = DockStyle.Top;
-           // existingUserInBuilder.Controls.Add(plannerControl3);
             plannerControl3.BringToFront();
-            //plannerControl3.Dock.
-            //PlannerControl2 plannerControl2 = new PlannerControl2();
-           // plannerControl2.UserMail = (userMail + date);
-            //this.Controls.Clear();
-            //this.Controls.Add(plannerControl3);
-            plannerControl3.single.Text = txtSingle.Text;
-            plannerControl3.ddouble.Text = txtDouble.Text;
-            plannerControl3.triple.Text = txtTriple.Text;
-            plannerControl3.nofAdults.Text = txtAdults.Text;
-            plannerControl3.bofChild.Text = txtChildrents.Text;
-            plannerControl3.starCategory.Text = cmbCategary.Text;
+
+
             plannerControl3.l3.Text = txtNoOfDays.Text;
 
 
-            //plannerControl3.setDepatureDate = depatureDate;
-            //plannerControl3.setMealPreference = cmbMeals.Text;
-            //plannerControl3.setHotelStatus = cmbCategary.Text;
+            plannerControl3.controlAdults = txtAdults.Text;
+            plannerControl3.controlChildren = txtChildrents.Text;
+            plannerControl3.controlCategory = cmbCategary.Text;
+            plannerControl3.controlSingleRoom = txtSingle.Text;
+            plannerControl3.controlDoubleRoom = txtDouble.Text;
+            plannerControl3.controlTripleRoom = txtTriple.Text;
+            plannerControl3.controlTripId = triptId;
 
-            //setting values to calculate 
-            //plannerControl3.setSingleRoom = Convert.ToInt16(txtSingle.Text);  
-            //plannerControl3.setDoubleRoom = Convert.ToInt16(txtDouble.Text);
-            //plannerControl3.setTripleRoom = Convert.ToInt16(txtTriple.Text);
-
+            
             String sql = "INSERT INTO trips " +
                 "(tripId, " +
                 "arivalDate, " +
@@ -156,7 +131,7 @@ namespace CRM_Inbound_Tourism_Project
                 "meal, " +
                 "starGategory) " +
                 "VALUES('"
-                + ( userMail + date) + "','"
+                + triptId+"','"
                 + arrivalDate + "','"
                 + depatureDate + "','"
                 + txtAdults.Text + "','"
@@ -168,23 +143,22 @@ namespace CRM_Inbound_Tourism_Project
                 + txtTriple.Text + "','"
                 + cmbMeals.Text + "','"
                 + cmbCategary.Text + "')";
+
+            
             try
             {
                 MySqlCommand command = new MySqlCommand(sql, conn);
                 MySqlDataReader dataReader;
                 conn.Open();
                 dataReader = command.ExecuteReader();
-                
+
                 MessageBox.Show("Successfully added...!");
                 conn.Close();
                 
-                //plannerControl3 = new PlannerControl3();
-                //plannerControl3.controlTripId = (userMail + date);
-
                 plannerControl2 = new PlannerControl2();
                 this.Controls.Clear();
                 this.Controls.Add(plannerControl3);
-                
+
             }
             catch (Exception e)
             {

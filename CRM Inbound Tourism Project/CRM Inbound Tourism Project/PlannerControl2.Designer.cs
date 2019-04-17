@@ -37,7 +37,6 @@
             this.lblSingle = new System.Windows.Forms.Label();
             this.lblNoOfRooms = new System.Windows.Forms.Label();
             this.lblNumberOfDays = new System.Windows.Forms.Label();
-            this.lblAges = new System.Windows.Forms.Label();
             this.lblChildren = new System.Windows.Forms.Label();
             this.lblAdults = new System.Windows.Forms.Label();
             this.lblDepatureDate = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.txtNoOfDays = new System.Windows.Forms.TextBox();
             this.txtAdults = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtChildrents = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtAge = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtNoOfRooms = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtSingle = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtDouble = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -62,7 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.panel1.Location = new System.Drawing.Point(122, 455);
+            this.panel1.Location = new System.Drawing.Point(121, 406);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(601, 1);
             this.panel1.TabIndex = 79;
@@ -71,7 +69,7 @@
             // 
             this.lblStarCategory.AutoSize = true;
             this.lblStarCategory.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStarCategory.Location = new System.Drawing.Point(413, 477);
+            this.lblStarCategory.Location = new System.Drawing.Point(412, 428);
             this.lblStarCategory.Name = "lblStarCategory";
             this.lblStarCategory.Size = new System.Drawing.Size(88, 16);
             this.lblStarCategory.TabIndex = 75;
@@ -81,7 +79,7 @@
             // 
             this.lblMealPreferance.AutoSize = true;
             this.lblMealPreferance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMealPreferance.Location = new System.Drawing.Point(60, 476);
+            this.lblMealPreferance.Location = new System.Drawing.Point(59, 427);
             this.lblMealPreferance.Name = "lblMealPreferance";
             this.lblMealPreferance.Size = new System.Drawing.Size(110, 16);
             this.lblMealPreferance.TabIndex = 71;
@@ -91,7 +89,7 @@
             // 
             this.lblTriple.AutoSize = true;
             this.lblTriple.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTriple.Location = new System.Drawing.Point(60, 406);
+            this.lblTriple.Location = new System.Drawing.Point(60, 352);
             this.lblTriple.Name = "lblTriple";
             this.lblTriple.Size = new System.Drawing.Size(47, 16);
             this.lblTriple.TabIndex = 67;
@@ -101,7 +99,7 @@
             // 
             this.lblDouble.AutoSize = true;
             this.lblDouble.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDouble.Location = new System.Drawing.Point(515, 364);
+            this.lblDouble.Location = new System.Drawing.Point(515, 310);
             this.lblDouble.Name = "lblDouble";
             this.lblDouble.Size = new System.Drawing.Size(56, 16);
             this.lblDouble.TabIndex = 66;
@@ -111,7 +109,7 @@
             // 
             this.lblSingle.AutoSize = true;
             this.lblSingle.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSingle.Location = new System.Drawing.Point(60, 368);
+            this.lblSingle.Location = new System.Drawing.Point(60, 314);
             this.lblSingle.Name = "lblSingle";
             this.lblSingle.Size = new System.Drawing.Size(52, 16);
             this.lblSingle.TabIndex = 65;
@@ -121,7 +119,7 @@
             // 
             this.lblNoOfRooms.AutoSize = true;
             this.lblNoOfRooms.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoOfRooms.Location = new System.Drawing.Point(60, 322);
+            this.lblNoOfRooms.Location = new System.Drawing.Point(60, 268);
             this.lblNoOfRooms.Name = "lblNoOfRooms";
             this.lblNoOfRooms.Size = new System.Drawing.Size(120, 16);
             this.lblNoOfRooms.TabIndex = 63;
@@ -131,21 +129,11 @@
             // 
             this.lblNumberOfDays.AutoSize = true;
             this.lblNumberOfDays.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberOfDays.Location = new System.Drawing.Point(60, 279);
+            this.lblNumberOfDays.Location = new System.Drawing.Point(60, 225);
             this.lblNumberOfDays.Name = "lblNumberOfDays";
             this.lblNumberOfDays.Size = new System.Drawing.Size(109, 16);
             this.lblNumberOfDays.TabIndex = 62;
             this.lblNumberOfDays.Text = "Number of Days :";
-            // 
-            // lblAges
-            // 
-            this.lblAges.AutoSize = true;
-            this.lblAges.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAges.Location = new System.Drawing.Point(60, 232);
-            this.lblAges.Name = "lblAges";
-            this.lblAges.Size = new System.Drawing.Size(46, 16);
-            this.lblAges.TabIndex = 60;
-            this.lblAges.Text = "Ages :";
             // 
             // lblChildren
             // 
@@ -194,7 +182,7 @@
             this.btnNext.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnNext.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.next;
             this.btnNext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNext.Location = new System.Drawing.Point(767, 499);
+            this.btnNext.Location = new System.Drawing.Point(766, 450);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 27);
             this.btnNext.TabIndex = 81;
@@ -206,7 +194,7 @@
             // txtNoOfDays
             // 
             this.txtNoOfDays.BackColor = System.Drawing.Color.White;
-            this.txtNoOfDays.Location = new System.Drawing.Point(213, 278);
+            this.txtNoOfDays.Location = new System.Drawing.Point(213, 224);
             this.txtNoOfDays.Name = "txtNoOfDays";
             this.txtNoOfDays.Size = new System.Drawing.Size(157, 20);
             this.txtNoOfDays.TabIndex = 87;
@@ -245,23 +233,6 @@
             this.txtChildrents.TabIndex = 105;
             this.txtChildrents.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtAge
-            // 
-            this.txtAge.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtAge.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtAge.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtAge.BorderThickness = 1;
-            this.txtAge.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAge.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtAge.ForeColor = System.Drawing.Color.Black;
-            this.txtAge.isPassword = false;
-            this.txtAge.Location = new System.Drawing.Point(213, 228);
-            this.txtAge.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(157, 20);
-            this.txtAge.TabIndex = 106;
-            this.txtAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // txtNoOfRooms
             // 
             this.txtNoOfRooms.BorderColorFocused = System.Drawing.Color.Sienna;
@@ -272,7 +243,7 @@
             this.txtNoOfRooms.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtNoOfRooms.ForeColor = System.Drawing.Color.Black;
             this.txtNoOfRooms.isPassword = false;
-            this.txtNoOfRooms.Location = new System.Drawing.Point(213, 318);
+            this.txtNoOfRooms.Location = new System.Drawing.Point(213, 264);
             this.txtNoOfRooms.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoOfRooms.Name = "txtNoOfRooms";
             this.txtNoOfRooms.Size = new System.Drawing.Size(157, 20);
@@ -289,7 +260,7 @@
             this.txtSingle.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtSingle.ForeColor = System.Drawing.Color.Black;
             this.txtSingle.isPassword = false;
-            this.txtSingle.Location = new System.Drawing.Point(213, 364);
+            this.txtSingle.Location = new System.Drawing.Point(213, 310);
             this.txtSingle.Margin = new System.Windows.Forms.Padding(4);
             this.txtSingle.Name = "txtSingle";
             this.txtSingle.Size = new System.Drawing.Size(157, 20);
@@ -306,7 +277,7 @@
             this.txtDouble.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtDouble.ForeColor = System.Drawing.Color.Black;
             this.txtDouble.isPassword = false;
-            this.txtDouble.Location = new System.Drawing.Point(666, 360);
+            this.txtDouble.Location = new System.Drawing.Point(666, 306);
             this.txtDouble.Margin = new System.Windows.Forms.Padding(4);
             this.txtDouble.Name = "txtDouble";
             this.txtDouble.Size = new System.Drawing.Size(157, 20);
@@ -323,7 +294,7 @@
             this.txtTriple.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtTriple.ForeColor = System.Drawing.Color.Black;
             this.txtTriple.isPassword = false;
-            this.txtTriple.Location = new System.Drawing.Point(213, 406);
+            this.txtTriple.Location = new System.Drawing.Point(213, 352);
             this.txtTriple.Margin = new System.Windows.Forms.Padding(4);
             this.txtTriple.Name = "txtTriple";
             this.txtTriple.Size = new System.Drawing.Size(157, 20);
@@ -363,7 +334,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::CRM_Inbound_Tourism_Project.Properties.Resources.back;
-            this.button1.Location = new System.Drawing.Point(41, 40);
+            this.button1.Location = new System.Drawing.Point(850, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 113;
@@ -378,7 +349,7 @@
             "Bed and Break Fast",
             "Half Board",
             "Full Board"});
-            this.cmbMeals.Location = new System.Drawing.Point(63, 505);
+            this.cmbMeals.Location = new System.Drawing.Point(62, 456);
             this.cmbMeals.Name = "cmbMeals";
             this.cmbMeals.Size = new System.Drawing.Size(307, 21);
             this.cmbMeals.TabIndex = 114;
@@ -391,7 +362,7 @@
             "3",
             "4",
             "5"});
-            this.cmbCategary.Location = new System.Drawing.Point(416, 505);
+            this.cmbCategary.Location = new System.Drawing.Point(415, 456);
             this.cmbCategary.Name = "cmbCategary";
             this.cmbCategary.Size = new System.Drawing.Size(307, 21);
             this.cmbCategary.TabIndex = 115;
@@ -413,7 +384,6 @@
             this.Controls.Add(this.txtDouble);
             this.Controls.Add(this.txtSingle);
             this.Controls.Add(this.txtNoOfRooms);
-            this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtChildrents);
             this.Controls.Add(this.txtAdults);
             this.Controls.Add(this.txtDepatureDate);
@@ -428,7 +398,6 @@
             this.Controls.Add(this.lblSingle);
             this.Controls.Add(this.lblNoOfRooms);
             this.Controls.Add(this.lblNumberOfDays);
-            this.Controls.Add(this.lblAges);
             this.Controls.Add(this.lblChildren);
             this.Controls.Add(this.lblAdults);
             this.Controls.Add(this.lblDepatureDate);
@@ -450,7 +419,6 @@
         private System.Windows.Forms.Label lblSingle;
         private System.Windows.Forms.Label lblNoOfRooms;
         private System.Windows.Forms.Label lblNumberOfDays;
-        private System.Windows.Forms.Label lblAges;
         private System.Windows.Forms.Label lblChildren;
         private System.Windows.Forms.Label lblAdults;
         private System.Windows.Forms.Label lblDepatureDate;
@@ -459,7 +427,6 @@
         private System.Windows.Forms.TextBox txtNoOfDays;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtAdults;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtChildrents;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtAge;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtNoOfRooms;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtDouble;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTriple;

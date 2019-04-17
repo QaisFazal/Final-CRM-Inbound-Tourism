@@ -15,7 +15,6 @@ namespace CRM_Inbound_Tourism_Project
         public PlannerControl()
         {
             InitializeComponent();
-           
             
         }
 
