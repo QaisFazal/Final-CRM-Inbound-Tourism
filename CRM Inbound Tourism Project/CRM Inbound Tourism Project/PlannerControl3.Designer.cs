@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlannerControl3));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,27 +47,16 @@
             this.ddouble = new System.Windows.Forms.Label();
             this.single = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtDescription = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtAdult = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtChildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtTotChildren = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtTotAdult = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.txtSingleRoomHotel = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDoubleRoomHotel = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtTripleRoomHotel = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.cmbHotels = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtDinner = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtLunch = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtBreakFast = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -76,8 +66,6 @@
             this.l1 = new System.Windows.Forms.Label();
             this.l2 = new System.Windows.Forms.Label();
             this.l3 = new System.Windows.Forms.Label();
-            this.txtFrom = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtTo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.button1 = new System.Windows.Forms.Button();
             this.lblSingleRoom = new System.Windows.Forms.Label();
             this.lblDoubleRoom = new System.Windows.Forms.Label();
@@ -85,6 +73,21 @@
             this.lblAdults = new System.Windows.Forms.Label();
             this.lblChildrens = new System.Windows.Forms.Label();
             this.lblStarCategory = new System.Windows.Forms.Label();
+            this.txtAdult = new System.Windows.Forms.TextBox();
+            this.txtChildren = new System.Windows.Forms.TextBox();
+            this.txtTotAdult = new System.Windows.Forms.TextBox();
+            this.txtTotChildren = new System.Windows.Forms.TextBox();
+            this.txtBreakFast = new System.Windows.Forms.TextBox();
+            this.txtSingleRoomHotel = new System.Windows.Forms.TextBox();
+            this.txtDoubleRoomHotel = new System.Windows.Forms.TextBox();
+            this.txtTripleRoomHotel = new System.Windows.Forms.TextBox();
+            this.txtLunch = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtLunchPrice = new System.Windows.Forms.TextBox();
+            this.txtDinner = new System.Windows.Forms.TextBox();
+            this.txtFrom = new System.Windows.Forms.ComboBox();
+            this.txtTo = new System.Windows.Forms.ComboBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -247,23 +250,6 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Description:";
             // 
-            // txtDescription
-            // 
-            this.txtDescription.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtDescription.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtDescription.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtDescription.BorderThickness = 1;
-            this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDescription.ForeColor = System.Drawing.Color.Black;
-            this.txtDescription.isPassword = false;
-            this.txtDescription.Location = new System.Drawing.Point(247, 290);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(560, 75);
-            this.txtDescription.TabIndex = 105;
-            this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -303,80 +289,6 @@
             this.label14.Size = new System.Drawing.Size(47, 17);
             this.label14.TabIndex = 109;
             this.label14.Text = "Total :";
-            // 
-            // txtAdult
-            // 
-            this.txtAdult.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtAdult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtAdult.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtAdult.BorderThickness = 1;
-            this.txtAdult.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAdult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtAdult.ForeColor = System.Drawing.Color.Black;
-            this.txtAdult.isPassword = false;
-            this.txtAdult.Location = new System.Drawing.Point(579, 425);
-            this.txtAdult.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAdult.Name = "txtAdult";
-            this.txtAdult.Size = new System.Drawing.Size(48, 28);
-            this.txtAdult.TabIndex = 110;
-            this.txtAdult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAdult.OnValueChanged += new System.EventHandler(this.nadult_OnValueChanged);
-            this.txtAdult.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nadult_KeyDown);
-            this.txtAdult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nadult_KeyPress);
-            // 
-            // txtChildren
-            // 
-            this.txtChildren.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtChildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtChildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtChildren.BorderThickness = 1;
-            this.txtChildren.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtChildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtChildren.ForeColor = System.Drawing.Color.Black;
-            this.txtChildren.isPassword = false;
-            this.txtChildren.Location = new System.Drawing.Point(724, 425);
-            this.txtChildren.Margin = new System.Windows.Forms.Padding(4);
-            this.txtChildren.Name = "txtChildren";
-            this.txtChildren.Size = new System.Drawing.Size(48, 28);
-            this.txtChildren.TabIndex = 111;
-            this.txtChildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChildren.OnValueChanged += new System.EventHandler(this.nchildren_OnValueChanged);
-            // 
-            // txtTotChildren
-            // 
-            this.txtTotChildren.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtTotChildren.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtTotChildren.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtTotChildren.BorderThickness = 1;
-            this.txtTotChildren.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTotChildren.Enabled = false;
-            this.txtTotChildren.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtTotChildren.ForeColor = System.Drawing.Color.Black;
-            this.txtTotChildren.isPassword = false;
-            this.txtTotChildren.Location = new System.Drawing.Point(724, 471);
-            this.txtTotChildren.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTotChildren.Name = "txtTotChildren";
-            this.txtTotChildren.Size = new System.Drawing.Size(48, 28);
-            this.txtTotChildren.TabIndex = 113;
-            this.txtTotChildren.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtTotAdult
-            // 
-            this.txtTotAdult.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtTotAdult.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtTotAdult.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtTotAdult.BorderThickness = 1;
-            this.txtTotAdult.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTotAdult.Enabled = false;
-            this.txtTotAdult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtTotAdult.ForeColor = System.Drawing.Color.Black;
-            this.txtTotAdult.isPassword = false;
-            this.txtTotAdult.Location = new System.Drawing.Point(579, 471);
-            this.txtTotAdult.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTotAdult.Name = "txtTotAdult";
-            this.txtTotAdult.Size = new System.Drawing.Size(48, 28);
-            this.txtTotAdult.TabIndex = 112;
-            this.txtTotAdult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label15
             // 
@@ -421,67 +333,15 @@
             this.label18.Text = "Triple :";
             this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
-            // comboBox3
+            // cmbHotels
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(232, 534);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 118;
-            // 
-            // txtSingleRoomHotel
-            // 
-            this.txtSingleRoomHotel.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtSingleRoomHotel.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtSingleRoomHotel.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtSingleRoomHotel.BorderThickness = 1;
-            this.txtSingleRoomHotel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSingleRoomHotel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtSingleRoomHotel.ForeColor = System.Drawing.Color.Black;
-            this.txtSingleRoomHotel.isPassword = false;
-            this.txtSingleRoomHotel.Location = new System.Drawing.Point(447, 535);
-            this.txtSingleRoomHotel.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSingleRoomHotel.Name = "txtSingleRoomHotel";
-            this.txtSingleRoomHotel.Size = new System.Drawing.Size(91, 20);
-            this.txtSingleRoomHotel.TabIndex = 119;
-            this.txtSingleRoomHotel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSingleRoomHotel.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox1_OnValueChanged);
-            // 
-            // txtDoubleRoomHotel
-            // 
-            this.txtDoubleRoomHotel.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtDoubleRoomHotel.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtDoubleRoomHotel.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtDoubleRoomHotel.BorderThickness = 1;
-            this.txtDoubleRoomHotel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDoubleRoomHotel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDoubleRoomHotel.ForeColor = System.Drawing.Color.Black;
-            this.txtDoubleRoomHotel.isPassword = false;
-            this.txtDoubleRoomHotel.Location = new System.Drawing.Point(638, 535);
-            this.txtDoubleRoomHotel.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDoubleRoomHotel.Name = "txtDoubleRoomHotel";
-            this.txtDoubleRoomHotel.Size = new System.Drawing.Size(91, 20);
-            this.txtDoubleRoomHotel.TabIndex = 120;
-            this.txtDoubleRoomHotel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDoubleRoomHotel.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox2_OnValueChanged);
-            // 
-            // txtTripleRoomHotel
-            // 
-            this.txtTripleRoomHotel.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtTripleRoomHotel.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtTripleRoomHotel.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtTripleRoomHotel.BorderThickness = 1;
-            this.txtTripleRoomHotel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTripleRoomHotel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtTripleRoomHotel.ForeColor = System.Drawing.Color.Black;
-            this.txtTripleRoomHotel.isPassword = false;
-            this.txtTripleRoomHotel.Location = new System.Drawing.Point(812, 535);
-            this.txtTripleRoomHotel.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTripleRoomHotel.Name = "txtTripleRoomHotel";
-            this.txtTripleRoomHotel.Size = new System.Drawing.Size(91, 20);
-            this.txtTripleRoomHotel.TabIndex = 121;
-            this.txtTripleRoomHotel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTripleRoomHotel.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox3_OnValueChanged);
+            this.cmbHotels.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHotels.FormattingEnabled = true;
+            this.cmbHotels.Location = new System.Drawing.Point(232, 534);
+            this.cmbHotels.Name = "cmbHotels";
+            this.cmbHotels.Size = new System.Drawing.Size(121, 21);
+            this.cmbHotels.TabIndex = 118;
+            this.cmbHotels.SelectedIndexChanged += new System.EventHandler(this.cmbHotels_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -493,60 +353,6 @@
             this.label19.TabIndex = 122;
             this.label19.Text = "Extra Meal :";
             this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // txtDinner
-            // 
-            this.txtDinner.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtDinner.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtDinner.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtDinner.BorderThickness = 1;
-            this.txtDinner.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDinner.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDinner.ForeColor = System.Drawing.Color.Black;
-            this.txtDinner.isPassword = false;
-            this.txtDinner.Location = new System.Drawing.Point(812, 583);
-            this.txtDinner.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDinner.Name = "txtDinner";
-            this.txtDinner.Size = new System.Drawing.Size(91, 20);
-            this.txtDinner.TabIndex = 128;
-            this.txtDinner.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDinner.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox4_OnValueChanged);
-            // 
-            // txtLunch
-            // 
-            this.txtLunch.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtLunch.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtLunch.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtLunch.BorderThickness = 1;
-            this.txtLunch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLunch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtLunch.ForeColor = System.Drawing.Color.Black;
-            this.txtLunch.isPassword = false;
-            this.txtLunch.Location = new System.Drawing.Point(638, 583);
-            this.txtLunch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLunch.Name = "txtLunch";
-            this.txtLunch.Size = new System.Drawing.Size(91, 20);
-            this.txtLunch.TabIndex = 127;
-            this.txtLunch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtLunch.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox5_OnValueChanged);
-            // 
-            // txtBreakFast
-            // 
-            this.txtBreakFast.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtBreakFast.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtBreakFast.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtBreakFast.BorderThickness = 1;
-            this.txtBreakFast.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBreakFast.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtBreakFast.ForeColor = System.Drawing.Color.Black;
-            this.txtBreakFast.isPassword = false;
-            this.txtBreakFast.Location = new System.Drawing.Point(447, 583);
-            this.txtBreakFast.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBreakFast.Name = "txtBreakFast";
-            this.txtBreakFast.Size = new System.Drawing.Size(91, 20);
-            this.txtBreakFast.TabIndex = 126;
-            this.txtBreakFast.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBreakFast.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox6_OnValueChanged);
             // 
             // label21
             // 
@@ -650,41 +456,7 @@
             this.l3.Name = "l3";
             this.l3.Size = new System.Drawing.Size(43, 23);
             this.l3.TabIndex = 133;
-            // 
-            // txtFrom
-            // 
-            this.txtFrom.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtFrom.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtFrom.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtFrom.BorderThickness = 1;
-            this.txtFrom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFrom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFrom.ForeColor = System.Drawing.Color.Black;
-            this.txtFrom.isPassword = false;
-            this.txtFrom.Location = new System.Drawing.Point(247, 217);
-            this.txtFrom.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(129, 20);
-            this.txtFrom.TabIndex = 134;
-            this.txtFrom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFrom.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox7_OnValueChanged);
-            // 
-            // txtTo
-            // 
-            this.txtTo.BorderColorFocused = System.Drawing.Color.Sienna;
-            this.txtTo.BorderColorIdle = System.Drawing.Color.SaddleBrown;
-            this.txtTo.BorderColorMouseHover = System.Drawing.Color.Sienna;
-            this.txtTo.BorderThickness = 1;
-            this.txtTo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtTo.ForeColor = System.Drawing.Color.Black;
-            this.txtTo.isPassword = false;
-            this.txtTo.Location = new System.Drawing.Point(625, 217);
-            this.txtTo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(129, 20);
-            this.txtTo.TabIndex = 135;
-            this.txtTo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.l3.Click += new System.EventHandler(this.l3_Click);
             // 
             // button1
             // 
@@ -757,6 +529,131 @@
             this.lblStarCategory.TabIndex = 142;
             this.lblStarCategory.Text = "X";
             // 
+            // txtAdult
+            // 
+            this.txtAdult.Location = new System.Drawing.Point(559, 430);
+            this.txtAdult.Name = "txtAdult";
+            this.txtAdult.Size = new System.Drawing.Size(94, 20);
+            this.txtAdult.TabIndex = 146;
+            // 
+            // txtChildren
+            // 
+            this.txtChildren.Location = new System.Drawing.Point(711, 428);
+            this.txtChildren.Name = "txtChildren";
+            this.txtChildren.Size = new System.Drawing.Size(94, 20);
+            this.txtChildren.TabIndex = 147;
+            // 
+            // txtTotAdult
+            // 
+            this.txtTotAdult.Location = new System.Drawing.Point(559, 473);
+            this.txtTotAdult.Name = "txtTotAdult";
+            this.txtTotAdult.Size = new System.Drawing.Size(94, 20);
+            this.txtTotAdult.TabIndex = 148;
+            // 
+            // txtTotChildren
+            // 
+            this.txtTotChildren.Location = new System.Drawing.Point(711, 474);
+            this.txtTotChildren.Name = "txtTotChildren";
+            this.txtTotChildren.Size = new System.Drawing.Size(94, 20);
+            this.txtTotChildren.TabIndex = 149;
+            // 
+            // txtBreakFast
+            // 
+            this.txtBreakFast.Location = new System.Drawing.Point(456, 583);
+            this.txtBreakFast.Name = "txtBreakFast";
+            this.txtBreakFast.Size = new System.Drawing.Size(94, 20);
+            this.txtBreakFast.TabIndex = 150;
+            // 
+            // txtSingleRoomHotel
+            // 
+            this.txtSingleRoomHotel.Enabled = false;
+            this.txtSingleRoomHotel.Location = new System.Drawing.Point(456, 535);
+            this.txtSingleRoomHotel.Name = "txtSingleRoomHotel";
+            this.txtSingleRoomHotel.ReadOnly = true;
+            this.txtSingleRoomHotel.Size = new System.Drawing.Size(94, 20);
+            this.txtSingleRoomHotel.TabIndex = 151;
+            // 
+            // txtDoubleRoomHotel
+            // 
+            this.txtDoubleRoomHotel.Enabled = false;
+            this.txtDoubleRoomHotel.Location = new System.Drawing.Point(635, 535);
+            this.txtDoubleRoomHotel.Name = "txtDoubleRoomHotel";
+            this.txtDoubleRoomHotel.ReadOnly = true;
+            this.txtDoubleRoomHotel.Size = new System.Drawing.Size(94, 20);
+            this.txtDoubleRoomHotel.TabIndex = 152;
+            // 
+            // txtTripleRoomHotel
+            // 
+            this.txtTripleRoomHotel.Enabled = false;
+            this.txtTripleRoomHotel.Location = new System.Drawing.Point(812, 535);
+            this.txtTripleRoomHotel.Name = "txtTripleRoomHotel";
+            this.txtTripleRoomHotel.ReadOnly = true;
+            this.txtTripleRoomHotel.Size = new System.Drawing.Size(94, 20);
+            this.txtTripleRoomHotel.TabIndex = 153;
+            // 
+            // txtLunch
+            // 
+            this.txtLunch.BorderColorFocused = System.Drawing.Color.Sienna;
+            this.txtLunch.BorderColorIdle = System.Drawing.Color.SaddleBrown;
+            this.txtLunch.BorderColorMouseHover = System.Drawing.Color.Sienna;
+            this.txtLunch.BorderThickness = 1;
+            this.txtLunch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLunch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtLunch.ForeColor = System.Drawing.Color.Black;
+            this.txtLunch.isPassword = false;
+            this.txtLunch.Location = new System.Drawing.Point(638, 882);
+            this.txtLunch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLunch.Name = "txtLunch";
+            this.txtLunch.Size = new System.Drawing.Size(91, 20);
+            this.txtLunch.TabIndex = 127;
+            this.txtLunch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtLunch.OnValueChanged += new System.EventHandler(this.bunifuMetroTextbox5_OnValueChanged);
+            // 
+            // txtLunchPrice
+            // 
+            this.txtLunchPrice.Location = new System.Drawing.Point(635, 582);
+            this.txtLunchPrice.Name = "txtLunchPrice";
+            this.txtLunchPrice.Size = new System.Drawing.Size(94, 20);
+            this.txtLunchPrice.TabIndex = 154;
+            // 
+            // txtDinner
+            // 
+            this.txtDinner.Location = new System.Drawing.Point(812, 582);
+            this.txtDinner.Name = "txtDinner";
+            this.txtDinner.Size = new System.Drawing.Size(94, 20);
+            this.txtDinner.TabIndex = 156;
+            // 
+            // txtFrom
+            // 
+            this.txtFrom.FormattingEnabled = true;
+            this.txtFrom.Location = new System.Drawing.Point(247, 213);
+            this.txtFrom.Name = "txtFrom";
+            this.txtFrom.Size = new System.Drawing.Size(129, 21);
+            this.txtFrom.TabIndex = 157;
+            this.txtFrom.SelectedIndexChanged += new System.EventHandler(this.txtFrom_SelectedIndexChanged);
+            // 
+            // txtTo
+            // 
+            this.txtTo.FormattingEnabled = true;
+            this.txtTo.Location = new System.Drawing.Point(638, 216);
+            this.txtTo.Name = "txtTo";
+            this.txtTo.Size = new System.Drawing.Size(129, 21);
+            this.txtTo.TabIndex = 158;
+            this.txtTo.SelectedIndexChanged += new System.EventHandler(this.txtTo_SelectedIndexChanged);
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(273, 269);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(561, 114);
+            this.txtDescription.TabIndex = 159;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // PlannerControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -764,6 +661,19 @@
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(0, 966);
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtTo);
+            this.Controls.Add(this.txtFrom);
+            this.Controls.Add(this.txtDinner);
+            this.Controls.Add(this.txtLunchPrice);
+            this.Controls.Add(this.txtTripleRoomHotel);
+            this.Controls.Add(this.txtDoubleRoomHotel);
+            this.Controls.Add(this.txtSingleRoomHotel);
+            this.Controls.Add(this.txtBreakFast);
+            this.Controls.Add(this.txtTotChildren);
+            this.Controls.Add(this.txtTotAdult);
+            this.Controls.Add(this.txtChildren);
+            this.Controls.Add(this.txtAdult);
             this.Controls.Add(this.lblStarCategory);
             this.Controls.Add(this.lblChildrens);
             this.Controls.Add(this.lblAdults);
@@ -771,38 +681,26 @@
             this.Controls.Add(this.lblDoubleRoom);
             this.Controls.Add(this.lblSingleRoom);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtTo);
-            this.Controls.Add(this.txtFrom);
             this.Controls.Add(this.l3);
             this.Controls.Add(this.l2);
             this.Controls.Add(this.l1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnAddInfo);
-            this.Controls.Add(this.txtDinner);
             this.Controls.Add(this.txtLunch);
-            this.Controls.Add(this.txtBreakFast);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.txtTripleRoomHotel);
-            this.Controls.Add(this.txtDoubleRoomHotel);
-            this.Controls.Add(this.txtSingleRoomHotel);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cmbHotels);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.txtTotChildren);
-            this.Controls.Add(this.txtTotAdult);
-            this.Controls.Add(this.txtChildren);
-            this.Controls.Add(this.txtAdult);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.starCategory);
             this.Controls.Add(this.bofChild);
@@ -821,7 +719,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PlannerControl3";
-            this.Size = new System.Drawing.Size(974, 1054);
+            this.Size = new System.Drawing.Size(953, 604);
             this.Load += new System.EventHandler(this.PlannerControl3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -848,27 +746,16 @@
         public System.Windows.Forms.Label triple;
         public System.Windows.Forms.Label ddouble;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtDescription;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtAdult;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtChildren;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtTotChildren;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtTotAdult;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtSingleRoomHotel;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtDoubleRoomHotel;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtTripleRoomHotel;
+        private System.Windows.Forms.ComboBox cmbHotels;
         private System.Windows.Forms.Label label19;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtDinner;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtLunch;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtBreakFast;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -878,8 +765,6 @@
         private System.Windows.Forms.Label l1;
         private System.Windows.Forms.Label l2;
         public System.Windows.Forms.Label l3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtFrom;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtTo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblSingleRoom;
         private System.Windows.Forms.Label lblDoubleRoom;
@@ -887,5 +772,20 @@
         private System.Windows.Forms.Label lblAdults;
         private System.Windows.Forms.Label lblChildrens;
         private System.Windows.Forms.Label lblStarCategory;
+        private System.Windows.Forms.TextBox txtAdult;
+        private System.Windows.Forms.TextBox txtChildren;
+        private System.Windows.Forms.TextBox txtTotAdult;
+        private System.Windows.Forms.TextBox txtTotChildren;
+        private System.Windows.Forms.TextBox txtBreakFast;
+        private System.Windows.Forms.TextBox txtSingleRoomHotel;
+        private System.Windows.Forms.TextBox txtDoubleRoomHotel;
+        private System.Windows.Forms.TextBox txtTripleRoomHotel;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtLunch;
+        private System.Windows.Forms.TextBox txtLunchPrice;
+        private System.Windows.Forms.TextBox txtDinner;
+        private System.Windows.Forms.ComboBox txtFrom;
+        private System.Windows.Forms.ComboBox txtTo;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

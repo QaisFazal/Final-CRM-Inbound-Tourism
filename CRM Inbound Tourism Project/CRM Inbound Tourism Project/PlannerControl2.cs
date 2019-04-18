@@ -23,7 +23,6 @@ namespace CRM_Inbound_Tourism_Project
 
         //private ExistingUserInBuilder existingUserInBuilder1;
         
-
         private String arivaleDate, depatureDate, adults, childrens, ages, noOfDays, noOfRooms, single, doubleR, triple;
 
         private void txtArrivalDate_ValueChanged_1(object sender, EventArgs e)
@@ -115,7 +114,7 @@ namespace CRM_Inbound_Tourism_Project
             plannerControl3.controlDoubleRoom = txtDouble.Text;
             plannerControl3.controlTripleRoom = txtTriple.Text;
             plannerControl3.controlTripId = triptId;
-
+            plannerControl3.controlHStatus = cmbCategary.Text;
             
             String sql = "INSERT INTO trips " +
                 "(tripId, " +

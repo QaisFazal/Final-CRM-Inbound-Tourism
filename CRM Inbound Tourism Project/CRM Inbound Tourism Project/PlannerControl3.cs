@@ -21,10 +21,15 @@ namespace CRM_Inbound_Tourism_Project
 
         private String SQLPlannControl;
         private String singleRoom, doubleRoom, tripleRoom, adults, children, category;
-
+        private String h_status; 
         private String tripId;
 
-   
+    
+        public String controlHStatus {
+            get { return h_status; }
+            set { h_status = value; }
+        }
+
         public String controlTripId {
             get { return tripId; }
             set { tripId = value; }
@@ -82,14 +87,18 @@ namespace CRM_Inbound_Tourism_Project
             //this.plannerControl3.single.Text(this.plannerControl2.txtSingle.Value);
             //int x = this.plannerControl2.txtSingle.Text;
             //single.Text = Value;
-
+            int i = 1;
             lblSingleRoom.Text = singleRoom;
             lblDoubleRoom.Text = doubleRoom;
             lblTripleRoom.Text = tripleRoom;
             lblAdults.Text = adults;
             lblChildrens.Text = children;
             lblStarCategory.Text = category;
-            
+            l1.Text = Convert.ToString(i);
+
+            loadFromAndTo();
+
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -190,6 +199,11 @@ namespace CRM_Inbound_Tourism_Project
 
         }
 
+        private void txtFrom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void label19_Click(object sender, EventArgs e)
         {
 
@@ -199,20 +213,48 @@ namespace CRM_Inbound_Tourism_Project
         {
 
         }
+
+        private void l3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         int A = 1;
+
+        private void txtTo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadHotels();
+        }
+
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             addPlans();
+            //validation();
+
+        }
+
+        private void cmbHotels_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadRoomPrice();
+        }
+
+        public void validation() {
             
 
         }
 
-
         private void addPlans() {
 
-            double extraMeal = 0; // = Convert.ToDouble(txtBreakFast.Text) + Convert.ToDouble(txtLunch.Text) + Convert.ToDouble(txtDinner.Text);
-            double total = 0;// = Convert.ToDouble(txtTotAdult.Text) + Convert.ToDouble(txtTotChildren.Text) + Convert.ToDouble(txtSingleRoomHotel.Text) + Convert.ToDouble(txtDoubleRoomHotel.Text) + Convert.ToDouble(txtTripleRoomHotel.Text) + extraMeal;
-            String hotelAmount = "";
+            double extraMeal = 0;//Convert.ToDouble(txtBreakFast.Text) + 
+                               //Convert.ToDouble(txtLunch.Text) + 
+                               //Convert.ToDouble(txtDinner.Text);
+            
+            Double hotelAmount = 
+                (Convert.ToDouble(txtSingleRoomHotel.Text) * Convert.ToDouble(singleRoom) ) + 
+                (Convert.ToDouble(txtDoubleRoomHotel.Text) * Convert.ToDouble(doubleRoom) ) +
+                (Convert.ToDouble(txtTripleRoomHotel.Text) * Convert.ToDouble(tripleRoom) );
+            double total = 0;
+
             String sql = "INSERT INTO plans " +
                 "(tripId," +
                 "fromLocation," +
@@ -225,11 +267,11 @@ namespace CRM_Inbound_Tourism_Project
                 "total) " +
                 "VALUES(" +
                 "'" + tripId + "'," +
-                "'" + txtFrom + "'," +
-                "'" + txtTo + "'," +
-                "'" + txtDescription + "'," +
-                "'" + txtTotAdult + "'," +
-                "'" + txtTotChildren + "'," +
+                "'" + txtFrom.Text + "'," +
+                "'" + txtTo.Text + "'," +
+                "'" + txtDescription.Text + "'," +
+                "'" + txtTotAdult.Text + "'," +
+                "'" + txtTotChildren.Text + "'," +
                 "'" + hotelAmount + "'," +
                 "'" + extraMeal + "'," +
                 "'" + total + "')";
@@ -255,6 +297,133 @@ namespace CRM_Inbound_Tourism_Project
             }
         }
 
+        public void loadFromAndTo() {
 
+            String sql = "SELECT * FROM districts";
+
+            try
+            {
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                MySqlDataReader dataReader;
+                conn.Open();
+                dataReader = command.ExecuteReader();
+                
+                while (dataReader.Read()) {
+                    txtFrom.Items.Add(dataReader["districtName"].ToString());
+                    txtTo.Items.Add(dataReader["districtName"].ToString());
+                }
+
+                conn.Close();
+
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("There is a error while attepmting to add records : " + e);
+                conn.Close();
+            }
+        }
+
+        public void loadHotels() {
+
+
+            String sql = "SELECT * FROM hotels WHERE location = '" + txtTo.Text +"' AND h_status = '"+h_status+"'";
+
+            try
+            {
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                MySqlDataReader dataReader;
+                conn.Open();
+                dataReader = command.ExecuteReader();
+
+                cmbHotels.Items.Clear();
+
+                while (dataReader.Read())
+                {
+                    //txtFrom.Items.Add(dataReader["districtName"].ToString());
+                    cmbHotels.Items.Add(dataReader["name"].ToString());
+                }
+
+                conn.Close();
+
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("There is a error while attepmting to add records : " + e);
+                conn.Close();
+            }
+
+        }
+
+        public void loadRoomPrice()
+        {
+            txtSingleRoomHotel.Text = "";
+            txtDoubleRoomHotel.Text = "";
+            txtTripleRoomHotel.Text = "";
+
+            String sql = "SELECT * FROM rooms WHERE hotel = '" + cmbHotels.Text + "' AND room_type = '1'";
+            String sql1 = "SELECT * FROM rooms WHERE hotel = '" + cmbHotels.Text + "' AND room_type = '2'";
+            String sql2 = "SELECT * FROM rooms WHERE hotel = '" + cmbHotels.Text + "' AND room_type = '3'";
+
+            try
+            {
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                MySqlDataReader dataReader;
+                conn.Open();
+                dataReader = command.ExecuteReader();
+
+                
+                while (dataReader.Read())
+                {
+                    //txtFrom.Items.Add(dataReader["districtName"].ToString());
+                    //cmbHotels.Items.Add(dataReader["name"].ToString());
+                    txtSingleRoomHotel.Text = dataReader["price"].ToString();
+                }
+
+                conn.Close();
+
+                // second
+
+                MySqlCommand command1 = new MySqlCommand(sql1, conn);
+                MySqlDataReader dataReader1;
+                conn.Open();
+                dataReader1 = command1.ExecuteReader();
+                
+                while (dataReader1.Read())
+                {
+                    //txtFrom.Items.Add(dataReader["districtName"].ToString());
+                    //cmbHotels.Items.Add(dataReader["name"].ToString());
+                    txtDoubleRoomHotel.Text = dataReader1["price"].ToString();
+                }
+
+                conn.Close();
+
+                //third
+                MySqlCommand command2 = new MySqlCommand(sql2, conn);
+                MySqlDataReader dataReader2;
+                conn.Open();
+                dataReader2 = command2.ExecuteReader();
+                
+                while (dataReader2.Read())
+                {
+                    //txtFrom.Items.Add(dataReader["districtName"].ToString());
+                    //cmbHotels.Items.Add(dataReader["name"].ToString());
+                    txtTripleRoomHotel.Text = dataReader2["price"].ToString();
+                }
+
+                conn.Close();
+
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("There is a error while attepmting to add records : " + e);
+                conn.Close();
+            }
+        }
     }
 }
