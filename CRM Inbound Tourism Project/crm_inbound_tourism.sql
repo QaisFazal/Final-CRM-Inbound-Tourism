@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2019 at 07:51 AM
+-- Generation Time: Apr 19, 2019 at 05:36 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -58,6 +58,7 @@ INSERT INTO `customers` (`name`, `phone_number`, `residence`, `email`, `national
 ('8', '8', '8', '8', '8', '8'),
 ('9', '9', '9', '9', '9', '9'),
 ('Jhon', '07865746878', 'India', '953092158V', 'India', 'Tamil'),
+('add', '798798', 'jhkjhkj', 'add@gmail.comkjhkj', 'Sri Lanka', 'hkjh'),
 ('from builder2', 'from builder2', 'from builder2', 'from builder2', 'from builder2', 'from builder2'),
 ('FromBuilder', 'FromBuilder', 'FromBuilder', 'FromBuilder', 'FromBuilder', 'FromBuilder'),
 ('fromBuilder3', 'fromBuilder3', 'fromBuilder3', 'fromBuilder3', 'fromBuilder3', 'fromBuilder3'),
@@ -122,6 +123,7 @@ INSERT INTO `districts` (`districtName`) VALUES
 --
 
 CREATE TABLE `hotels` (
+  `hotelId` varchar(100) DEFAULT NULL,
   `name` varchar(60) NOT NULL,
   `location` varchar(80) NOT NULL,
   `h_status` int(11) NOT NULL
@@ -131,10 +133,11 @@ CREATE TABLE `hotels` (
 -- Dumping data for table `hotels`
 --
 
-INSERT INTO `hotels` (`name`, `location`, `h_status`) VALUES
-('Galadhari', 'Colombo', 5),
-('Hiltonn', 'Colombo', 5),
-('test1', 'test1', 0);
+INSERT INTO `hotels` (`hotelId`, `name`, `location`, `h_status`) VALUES
+(NULL, 'Galadhari', 'Colombo', 5),
+(NULL, 'Hiltonn', 'Colombo', 5),
+(NULL, 'Star', 'Anuradhapura', 5),
+(NULL, 'test1', 'test1', 0);
 
 -- --------------------------------------------------------
 
@@ -181,119 +184,29 @@ CREATE TABLE `meal_type` (
 --
 
 CREATE TABLE `plans` (
-  `id` int(11) NOT NULL,
-  `tripId` varchar(130) NOT NULL,
-  `startDate` varchar(15) NOT NULL,
-  `startTime` varchar(8) NOT NULL,
-  `endTime` varchar(8) NOT NULL,
-  `location` varchar(30) NOT NULL,
-  `area` varchar(30) NOT NULL,
-  `hotel` varchar(40) DEFAULT NULL,
-  `price` decimal(10,0) NOT NULL
+  `tripId` varchar(255) NOT NULL,
+  `fromLocation` varchar(255) NOT NULL,
+  `toLocation` varchar(255) NOT NULL,
+  `description` varchar(2000) NOT NULL,
+  `adultTotalCost` double DEFAULT NULL,
+  `childrenTotalCost` double DEFAULT NULL,
+  `hotelAmout` double NOT NULL,
+  `extraMealAmout` double NOT NULL,
+  `total` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `plans`
 --
 
-INSERT INTO `plans` (`id`, `tripId`, `startDate`, `startTime`, `endTime`, `location`, `area`, `hotel`, `price`) VALUES
-(1, '1', 'test@gmail.com', '09032019', '7am', '9pm', 'colombo', 'any', '0'),
-(2, 'System.Windows.Forms.DateTimePicker, Value: 3/29/2019 8:47:44 PM', 'System.Windows.', 'System.W', 'System.W', '27@gmail.com3/29/2019 8:47:00 ', 'System.Windows.Forms.ComboBox,', 'System.Windows.Forms.ComboBox, Items.Cou', '0'),
-(3, 'System.Windows.Forms.DateTimePicker, Value: 3/29/2019 8:47:44 PM', 'System.Windows.', 'System.W', 'System.W', '27@gmail.com3/29/2019 8:47:00 ', 'System.Windows.Forms.ComboBox,', 'System.Windows.Forms.ComboBox, Items.Cou', '0'),
-(4, 'System.Windows.Forms.DateTimePicker, Value: 3/29/2019 8:56:06 PM', 'System.Windows.', 'System.W', 'System.W', '29@gmail.com3/29/2019 8:55:33 ', 'System.Windows.Forms.ComboBox,', 'System.Windows.Forms.ComboBox, Items.Cou', '0'),
-(5, 'System.Windows.Forms.DateTimePicker, Value: 3/29/2019 8:56:06 PM', 'System.Windows.', 'System.W', 'System.W', '29@gmail.com3/29/2019 8:55:33 ', 'System.Windows.Forms.ComboBox,', 'System.Windows.Forms.ComboBox, Items.Cou', '0'),
-(6, '30@gmail.com3/29/2019 9:02:06 PM', 'Friday, March 2', '7.am', '8.pm', 'colombo', 'pettah', 'jkljjkh', '0'),
-(7, '30@gmail.com3/29/2019 9:02:06 PM', 'Monday, April 1', '7.am', '8.pm', 'colombo', 'pettah', 'jkljjkh', '0'),
-(8, '30@gmail.com3/29/2019 9:02:06 PM', 'Friday, May 3, ', '7.am', '8.pm', 'colombo', 'pettah', 'jkljjkh', '0'),
-(9, '212@gmail.com3/29/2019 10:54:12 PM3/29/2019 10:56:28 PM', 'Friday, March 2', 'sampleEx', 'sampleEx', 'sampleExisting', 'sampleExisting', 'sampleExisting', '0'),
-(10, '32@gmail.com3/30/2019 1:01:52 PM', 'Saturday, March', '7', '9', 'colo', 'colo', 'bkjbnk n', '0'),
-(11, '212@gmail.com3/30/2019 2:14:53 PM3/30/2019 2:15:39 PM', 'Saturday, March', '1', '1', 'khkjhk', 'jhkjh', 'kjhkj', '0'),
-(12, '4/1/2019 2:42:45 PM4/1/2019 2:42:51 PM', 'Monday, April 1', '6', '6', 'gj', 'ghj', 'jhg', '0'),
-(13, '4/1/2019 2:42:45 PM4/1/2019 2:42:51 PM', 'Monday, April 1', '6', '6', 'gj', 'ghj', 'jhg', '0'),
-(14, '4/1/2019 3:21:40 PM4/1/2019 3:21:44 PM', 'Monday, April 1', 'das', 'fdsf', 'sdf', 'fasdf', 'sadf', '0'),
-(15, '4/1/2019 3:21:40 PM4/1/2019 3:21:44 PM', 'Wednesday, Apri', 'das', 'fdsf', 'sdf', 'fasdf', 'sadf', '0'),
-(16, '4/1/2019 3:25:48 PM4/1/2019 3:25:52 PM', 'Wednesday, Apri', '1', '2', '3', '4', '5', '0'),
-(17, '212@gmail.com4/1/2019 3:48:27 PM4/1/2019 3:48:49 PM', 'Monday, April 1', 'hkjh', 'kjhkjh', 'kjhkjh', 'kjhkjh', 'khkjhk', '0'),
-(18, '4/1/2019 3:52:31 PM4/1/2019 3:52:35 PM', 'Monday, April 1', 'hkl', 'hkjhkj', 'kjhkjgugi', 'uiigig', 'bm', '0'),
-(19, '4/1/2019 3:55:01 PM4/1/2019 3:55:04 PM', 'Monday, April 1', 'dfds', 'hkjh', 'kjhkj', 'kjhkj', 'hkjhkj', '0'),
-(20, '4/1/2019 3:56:15 PM4/1/2019 3:56:19 PM', 'Monday, April 1', 'ssjlkj', 'ljlkjg', 'hkjhy', 'jhhnm', 'bbu', '0'),
-(21, '4/1/2019 3:56:15 PM4/1/2019 3:56:19 PM', 'Monday, April 1', 'ssjlkj', 'ljlkjg', 'hkjhy', 'jhhnm', 'bbu', '0'),
-(22, '4/1/2019 3:56:15 PM4/1/2019 3:56:19 PM', 'Monday, April 1', '1', '2', '3', '4', '5', '0'),
-(23, '4/1/2019 4:49:12 PM4/1/2019 4:49:15 PM', 'Monday, April 1', '', '', '', '', '', '0'),
-(24, '4/1/2019 5:02:03 PM4/1/2019 5:02:09 PM', 'Monday, April 1', '', '', '', '', '', '0'),
-(25, '4/1/2019 5:03:52 PM4/1/2019 5:03:55 PM', 'Tuesday, April ', '7', '9', 'Kandy', 'Dhaladha', 'DontKnow', '0'),
-(26, '4/1/2019 5:04:55 PM4/1/2019 5:04:59 PM', 'Monday, April 1', '7', '7', 'kandy', 'ddhaladha', 'DontKnow', '0'),
-(27, '4/1/2019 5:06:51 PM4/1/2019 5:06:55 PM', 'Monday, April 1', '8', '12', 'kandy', 'dhaladha', 'Queens Hotel', '0'),
-(28, '4/1/2019 5:09:24 PM4/1/2019 5:09:35 PM', 'Monday, April 1', '8', '12', 'kandy', 'dhaladha', 'Queens ', '0'),
-(29, '4/1/2019 5:12:26 PM4/1/2019 5:12:30 PM', 'Monday, April 1', '7', '9', 'kandy', 'dhaladh', 'queens', '0'),
-(30, '4/1/2019 5:14:25 PM4/1/2019 5:14:29 PM', 'Thursday, April', '7', '12', 'Kany', 'Dhaladha', 'Queens', '0'),
-(31, '4/1/2019 5:15:17 PM4/1/2019 5:15:21 PM', 'Wednesday, Apri', '9', '16', 'Colombo', 'Fort', 'Hilton', '0'),
-(32, '4/3/2019 10:59:43 AM4/3/2019 10:59:48 AM', 'Wednesday, Apri', '7`', '7', 'Colombo', 'GallFace', '', '0'),
-(33, '4/3/2019 10:59:43 AM4/3/2019 10:59:48 AM', 'Wednesday, Apri', '7`', '8', 'Colombo', 'GallFace', '', '0'),
-(34, '4/3/2019 10:59:43 AM4/3/2019 10:59:48 AM', 'Wednesday, Apri', '7`', '9', 'Colombo', 'Fort', '', '0'),
-(35, '4/3/2019 11:08:12 AM4/3/2019 11:08:16 AM', 'Wednesday, Apri', '7', '7', 'Colombo', 'GallFace', '', '0'),
-(36, '4/3/2019 11:08:12 AM4/3/2019 11:08:16 AM', 'Wednesday, Apri', '7', '7', 'Colombo', 'GallFace', '', '0'),
-(37, '4/3/2019 11:08:12 AM4/3/2019 11:08:16 AM', 'Wednesday, Apri', '7', '7', 'Colombo', 'GallFace', '', '0'),
-(38, '4/3/2019 11:08:12 AM4/3/2019 11:08:16 AM', 'Wednesday, Apri', '7', '7', 'Colombo', 'GallFace', '', '0'),
-(39, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(40, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(41, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(42, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(43, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(44, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(45, '4/3/2019 11:11:06 AM4/3/2019 11:11:10 AM', 'Wednesday, Apri', '8', '8', '', '', '', '0'),
-(46, '4/4/2019 12:40:52 AM4/4/2019 12:40:59 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(47, '4/4/2019 12:40:52 AM4/4/2019 12:40:59 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(48, '4/4/2019 12:40:52 AM4/4/2019 12:40:59 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(49, '4/4/2019 9:29:31 AM4/4/2019 9:29:48 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(50, '4/4/2019 9:31:19 AM4/4/2019 9:31:22 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(51, '4/4/2019 9:31:19 AM4/4/2019 9:31:22 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(52, '4/4/2019 9:31:19 AM4/4/2019 9:31:22 AM', 'Thursday, April', '', '', '', '', '', '0'),
-(53, '4/4/2019 11:57:59 PM4/4/2019 11:58:36 PM', 'Wednesday, Apri', '', '', '', '', '', '0'),
-(54, '4/4/2019 11:57:59 PM4/4/2019 11:58:36 PM', 'Wednesday, Apri', '7', '8', '', '', '', '0'),
-(55, '4/5/2019 12:54:25 AM4/5/2019 12:54:30 AM', 'Friday, April 5', '', '', '', '', '', '0'),
-(56, '4/5/2019 2:00:55 AM4/5/2019 2:01:00 AM', 'Friday, April 5', '', '', 'Colombo', 'Fort', 'Galadhari', '0'),
-(57, '212@gmail.com4/5/2019 2:39:35 AM4/5/2019 2:39:55 AM', 'Friday, April 5', '', '', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(58, '212@gmail.com4/5/2019 3:02:39 AM4/5/2019 3:02:57 AM', 'Friday, April 5', '7am', '7pm', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(59, '212@gmail.com4/5/2019 3:05:50 AM4/5/2019 3:06:06 AM', 'Friday, April 5', '7am', '7pm', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(60, '212@gmail.com4/5/2019 3:05:50 AM4/5/2019 3:06:06 AM', 'Friday, April 5', '7am', '7pm', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(61, '212@gmail.com4/5/2019 3:05:50 AM4/5/2019 3:06:06 AM', 'Friday, April 5', '7am', '7pm', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(62, '212@gmail.com4/5/2019 3:05:50 AM4/5/2019 3:06:06 AM', 'Friday, April 5', '7am', '7pm', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(63, '212@gmail.com4/5/2019 3:05:50 AM4/5/2019 3:06:06 AM', 'Friday, April 5', '7am', '7pm', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(64, '212@gmail.com4/5/2019 3:22:44 AM4/5/2019 3:22:59 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(65, '212@gmail.com4/5/2019 3:26:01 AM4/5/2019 3:26:13 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '100000'),
-(66, '212@gmail.com4/5/2019 3:32:26 AM4/5/2019 3:32:42 AM', 'Friday, April 5', '7', '10', 'Colombo', 'GallFace', 'Galadhari', '0'),
-(67, '212@gmail.com4/5/2019 3:32:26 AM4/5/2019 3:32:42 AM', 'Friday, April 5', '7', '10', 'Colombo', 'GallFace', 'Galadhari', '0'),
-(68, '212@gmail.com4/5/2019 3:34:49 AM4/5/2019 3:35:05 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(69, '212@gmail.com4/5/2019 3:34:49 AM4/5/2019 3:35:05 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(70, '212@gmail.com4/5/2019 3:34:49 AM4/5/2019 3:35:05 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(71, '212@gmail.com4/5/2019 4:10:26 AM4/5/2019 4:10:43 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(72, '212@gmail.com4/5/2019 4:10:26 AM4/5/2019 4:10:43 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(73, '212@gmail.com4/5/2019 8:24:29 AM4/5/2019 8:24:48 AM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(74, '212@gmail.com4/5/2019 8:24:29 AM4/5/2019 8:24:48 AM', 'Wednesday, Apri', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(75, '212@gmail.com4/5/2019 8:24:29 AM4/5/2019 8:24:48 AM', 'Wednesday, Apri', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(76, '212@gmail.com4/5/2019 9:06:32 PM4/5/2019 9:06:44 PM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '0'),
-(77, '212@gmail.com4/5/2019 9:13:26 PM4/5/2019 9:13:47 PM', 'Friday, April 5', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '50000'),
-(78, '1112@gmail.com4/6/2019 2:06:58 AM4/6/2019 2:07:09 AM', 'Saturday, April', '', '', '', '', '', '0'),
-(79, '212@gmail.com4/6/2019 2:53:47 AM4/6/2019 2:54:00 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '0'),
-(80, '212@gmail.com4/6/2019 3:01:32 AM4/6/2019 3:01:47 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(81, '212@gmail.com4/6/2019 3:01:32 AM4/6/2019 3:01:47 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(82, '212@gmail.com4/6/2019 3:01:32 AM4/6/2019 3:01:47 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(83, '212@gmail.com4/6/2019 3:01:32 AM4/6/2019 3:01:47 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(84, '212@gmail.com4/6/2019 3:13:35 AM4/6/2019 3:13:54 AM', 'Tuesday, April ', '7 ', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(85, '212@gmail.com4/6/2019 3:13:35 AM4/6/2019 3:13:54 AM', 'Tuesday, April ', '7 ', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(86, '212@gmail.com4/6/2019 3:13:35 AM4/6/2019 3:13:54 AM', 'Tuesday, April ', '7 ', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(87, '212@gmail.com4/6/2019 3:13:35 AM4/6/2019 3:13:54 AM', 'Tuesday, April ', '7 ', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(88, '212@gmail.com4/6/2019 9:26:52 AM4/6/2019 9:27:07 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(89, '212@gmail.com4/6/2019 9:26:52 AM4/6/2019 9:27:07 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(90, '212@gmail.com4/6/2019 9:26:52 AM4/6/2019 9:27:07 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(91, '212@gmail.com4/6/2019 9:26:52 AM4/6/2019 9:27:07 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(92, '212@gmail.com4/6/2019 9:26:52 AM4/6/2019 9:27:07 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(93, '212@gmail.com4/6/2019 9:26:52 AM4/6/2019 9:27:07 AM', 'Saturday, April', '7', '9', 'Colombo', 'GallFace', 'Galadhari', '20000'),
-(94, 'shan@gmail.com4/6/2019 10:38:47 AM', 'Tuesday, April ', '7', '9', 'Colombo', 'Fort', 'Galadhari', '20000'),
-(95, 'shan@gmail.com4/6/2019 10:38:47 AM', 'Tuesday, April ', '7', '9', 'Colombo', 'Fort', 'Galadhari', '20000'),
-(96, 'shan@gmail.com4/6/2019 10:38:47 AM', 'Tuesday, April ', '7', '9', 'Colombo', 'Fort', 'Galadhari', '20000'),
-(97, '212@gmail.com4/6/2019 10:48:07 AM4/6/2019 10:48:33 AM', 'Saturday, April', '7am', '9pm', 'Colombo', 'GallFace', 'Galadhari', '20000');
+INSERT INTO `plans` (`tripId`, `fromLocation`, `toLocation`, `description`, `adultTotalCost`, `childrenTotalCost`, `hotelAmout`, `extraMealAmout`, `total`) VALUES
+('212@gmail.com4/18/2019 10:34:34 PM4/18/2019 10:34:45 PM', 'Anuradhapura', 'Colombo', 'new line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew linenew line\r\nnew line\r\n', 100, 100, 0, 0, 0),
+('212@gmail.com4/19/2019 12:04:20 AM4/19/2019 12:04:31 AM', 'Anuradhapura', 'Colombo', 'new line\r\nnew line\r\nnew line\r\nnew line\r\nnew line', 1000, 1000, 20000, 0, 0),
+('212@gmail.com4/19/2019 12:27:34 AM4/19/2019 12:27:47 AM', 'Colombo', 'Colombo', 'fdkslfjsal;\r\nafsdklfjas;ldf\r\nafsdjlkasdf\r\nasfjdlsjfl', 100, 10000, 10000, 0, 0),
+('212@gmail.com4/19/2019 8:47:43 AM4/19/2019 8:47:57 AM', 'Badula', 'Colombo', 'ljlkjkl', 100, 100, 20000, 105, 0),
+('212@gmail.com4/19/2019 8:50:37 AM4/19/2019 8:50:49 AM', 'Batticaloa', 'Colombo', 'fgsdfg\r\nsfgs\r\nsfgs\r\ngfss\r\ngfsdg\r\nfsdgsdgsfdgs', 100, 100, 20000, 105, 20105),
+('212@gmail.com4/19/2019 8:56:37 AM4/19/2019 8:56:50 AM', 'Batticaloa', 'Colombo', 'jlkj\r\nljlkj\r\nlkhjklh\r\nlkjlkj', 1000, 1000, 0, 105, 105),
+('212@gmail.com4/19/2019 9:00:02 AM4/19/2019 9:00:39 AM', 'Batticaloa', 'Colombo', 'fgfga', 1200, 4300, 40000, 105, 40105);
 
 -- --------------------------------------------------------
 
@@ -358,6 +271,68 @@ INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `children
 ('212@gmail.com3/29/2019 10:54:12 PM3/29/2019 10:56:28 PM', 'fromExistr', 'fromExistr', 2, 2, 3, 3, 0, 3, 0, 'Half Board', 3),
 ('212@gmail.com3/30/2019 2:14:53 PM3/30/2019 2:15:39 PM', 'uljklkjl', 'lkjkl', 0, 0, 0, 0, 0, 0, 0, 'Bed and Br', 3),
 ('212@gmail.com4/1/2019 3:48:27 PM4/1/2019 3:48:49 PM', 'Monday, Ap', '4/10/2019', 0, 0, 9, 0, 0, 0, 0, 'Bed and Br', 3),
+('212@gmail.com4/15/2019 11:54:06 AM4/15/2019 11:55:34 AM', '', '4/18/2019', 2, 1, 3, 1, 0, 0, 1, 'Half Board', 5),
+('212@gmail.com4/15/2019 12:04:03 PM4/15/2019 12:04:20 PM', '', '4/16/2019', 2, 0, 1, 1, 0, 0, 1, 'Half Board', 4),
+('212@gmail.com4/16/2019 5:40:56 PM4/16/2019 5:41:11 PM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Half Board', 5),
+('212@gmail.com4/16/2019 5:43:38 PM4/16/2019 5:43:49 PM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:02:24 AM4/17/2019 10:02:42 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:07:34 AM4/17/2019 10:07:52 AM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:12:19 AM4/17/2019 10:12:36 AM', '', '4/3/2019', 1, 0, 1, 1, 0, 1, 1, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:17:01 AM4/17/2019 10:17:19 AM', '', '4/3/2019', 1, 1, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:18:56 AM4/17/2019 10:19:12 AM', '', '4/3/2019', 1, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:22:43 AM4/17/2019 10:23:02 AM', '', '4/3/2019', 1, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:26:26 AM4/17/2019 10:26:37 AM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 10:39:01 AM4/17/2019 10:39:42 AM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 1, 'Full Board', 5),
+('212@gmail.com4/17/2019 1:58:15 PM4/17/2019 1:58:27 PM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 2:22:23 PM4/17/2019 2:22:37 PM', '', '4/19/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 2:28:53 PM4/17/2019 2:29:05 PM', '', '4/18/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 2:32:47 PM4/17/2019 2:33:13 PM', '', '4/3/2019', 1, 1, 1, 1, 1, 1, 1, 'Full Board', 5),
+('212@gmail.com4/17/2019 2:38:41 PM4/17/2019 2:38:53 PM', '', '4/3/2019', 1, 1, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 4:19:16 PM4/17/2019 4:19:29 PM', '', '4/18/2019', 1, 0, 1, 1, 1, 0, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 4:22:49 PM4/17/2019 4:23:39 PM', '', '4/20/2019', 1, 1, 2, 1, 0, 1, 1, 'Full Board', 5),
+('212@gmail.com4/17/2019 4:34:31 PM4/17/2019 4:34:45 PM', '', '4/20/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 4:36:57 PM4/17/2019 4:37:09 PM', '', '4/21/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 4:39:21 PM4/17/2019 4:40:16 PM', '', '5/4/2019', 2, 0, 4, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 4:48:53 PM4/17/2019 4:49:06 PM', '', '4/3/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 5:33:13 PM4/17/2019 5:33:24 PM', '', '4/22/2019', 2, 1, 4, 1, 0, 0, 1, 'Full Board', 5),
+('212@gmail.com4/17/2019 5:57:04 PM4/17/2019 5:57:58 PM', '', '4/20/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 6:02:33 PM4/17/2019 6:02:47 PM', '', '4/3/2019', 1, 0, 1, 1, 1, 0, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 8:52:02 AM4/17/2019 8:53:47 AM', '', '4/3/2019', 1, 1, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:09:47 AM4/17/2019 9:09:59 AM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 1, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:11:16 AM4/17/2019 9:11:29 AM', '', '4/3/2019', 6, 0, 6, 3, 0, 3, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:33:40 AM4/17/2019 9:33:52 AM', '', '4/18/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:38:58 AM4/17/2019 9:39:14 AM', '', '4/18/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:43:05 AM4/17/2019 9:43:18 AM', '', '4/3/2019', 1, 0, 1, 1, 1, 0, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:46:36 AM4/17/2019 9:46:48 AM', '', '4/3/2019', 1, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:54:52 AM4/17/2019 9:55:05 AM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/17/2019 9:59:29 AM4/17/2019 9:59:45 AM', '', '4/3/2019', 1, 0, 1, 1, 1, 0, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 10:18:06 PM4/18/2019 10:18:20 PM', '', '4/22/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 10:28:54 PM4/18/2019 10:29:06 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 10:30:53 PM4/18/2019 10:31:05 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 10:34:34 PM4/18/2019 10:34:45 PM', '', '4/22/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 8:29:23 PM4/18/2019 8:29:52 PM', '', '4/20/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 8:30:59 PM4/18/2019 8:31:11 PM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 8:39:20 PM4/18/2019 8:43:24 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 8:45:18 PM4/18/2019 8:45:41 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 8:47:55 PM4/18/2019 8:48:39 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 8:49:54 PM4/18/2019 8:50:27 PM', '', '4/22/2019', 2, 0, 3, 2, 2, 0, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:00:41 PM4/18/2019 9:01:06 PM', '', '4/22/2019', 2, 0, 3, 1, 0, 1, 1, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:02:42 PM4/18/2019 9:02:54 PM', '', '4/22/2019', 1, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:05:15 PM4/18/2019 9:05:26 PM', '', '4/20/2019', 1, 1, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:07:09 PM4/18/2019 9:07:22 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Half Board', 5),
+('212@gmail.com4/18/2019 9:09:35 PM4/18/2019 9:09:44 PM', '', '4/22/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:14:52 PM4/18/2019 9:15:09 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:31:17 PM4/18/2019 9:31:31 PM', '', '4/21/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/18/2019 9:33:18 PM4/18/2019 9:33:31 PM', '', '4/22/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 12:04:20 AM4/19/2019 12:04:31 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 12:10:38 AM4/19/2019 12:10:53 AM', '', '4/22/2019', 2, 1, 3, 1, 0, 0, 1, 'Full Board', 5),
+('212@gmail.com4/19/2019 12:14:14 AM4/19/2019 12:14:26 AM', '', '4/22/2019', 2, 1, 2, 1, 0, 0, 1, 'Full Board', 5),
+('212@gmail.com4/19/2019 12:27:34 AM4/19/2019 12:27:47 AM', '', '4/22/2019', 1, 0, 2, 1, 1, 0, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 8:40:46 AM4/19/2019 8:41:05 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 8:47:43 AM4/19/2019 8:47:57 AM', '', '4/21/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 8:50:37 AM4/19/2019 8:50:49 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 8:56:37 AM4/19/2019 8:56:50 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 9:00:02 AM4/19/2019 9:00:39 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/5/2019 2:32:30 AM4/5/2019 2:32:45 AM', '', '4/8/2019', 2, 0, 0, 1, 0, 2, 0, '', 5),
 ('212@gmail.com4/5/2019 2:36:50 AM4/5/2019 2:37:06 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
 ('212@gmail.com4/5/2019 2:39:35 AM4/5/2019 2:39:55 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
@@ -378,6 +353,8 @@ INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `children
 ('212@gmail.com4/6/2019 10:48:07 AM4/6/2019 10:48:33 AM', '', '4/17/2019', 2, 0, 10, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/6/2019 11:02:56 AM4/6/2019 11:03:18 AM', '', '4/10/2019', 2, 1, 3, 1, 0, 0, 1, '', 0),
 ('212@gmail.com4/6/2019 11:13:31 AM4/6/2019 11:16:22 AM', '', '4/10/2019', 3, 3, 7, 3, 3, 3, 3, '', 5),
+('212@gmail.com4/6/2019 11:44:49 AM4/6/2019 11:45:56 AM', '', '4/9/2019', 2, 0, 3, 1, 0, 1, 0, 'Half Board', 5),
+('212@gmail.com4/6/2019 11:55:33 AM4/6/2019 11:56:41 AM', '', '4/12/2019', 1, 0, 2, 1, 1, 0, 0, 'Half Board', 5),
 ('212@gmail.com4/6/2019 1:03:04 AM4/6/2019 1:03:26 AM', '', '4/9/2019', 2, 0, 2, 1, 0, 1, 0, '', 0),
 ('212@gmail.com4/6/2019 2:04:44 AM4/6/2019 2:04:59 AM', '', '4/7/2019', 2, 0, 1, 1, 0, 1, 0, 'Half Board', 5),
 ('212@gmail.com4/6/2019 2:08:39 AM4/6/2019 2:08:52 AM', '', '4/7/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
@@ -487,6 +464,7 @@ INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `children
 ('4/5/2019 2:30:24 AM4/5/2019 2:30:28 AM', '', '4/3/2019', 0, 0, 0, 0, 0, 0, 0, '', 5),
 ('4/5/2019 2:31:02 AM4/5/2019 2:31:06 AM', '', '4/5/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
 ('4/6/2019 12:00:18 AM4/6/2019 12:04:30 AM', '', '4/3/2019', 0, 0, 0, 0, 0, 0, 0, '', 0),
+('add@gmail.comkjhkj4/6/2019 3:06:22 PM', '', '4/7/2019', 2, 0, 1, 1, 0, 1, 0, 'Half Board', 5),
 ('sample2@gmail.com3/29/2019 7:13:08 PM', 'toda', 'tommo', 1, 2, 2, 3, 1, 0, 1, 'Full Board', 3),
 ('sample3@gmail.com3/29/2019 7:39:02 PM', 'tomo', 'day after ', 3, 2, 3, 4, 3, 0, 1, 'Full Board', 5),
 ('sample4@gmail.com3/29/2019 7:42:09 PM', 'tod', 'tom', 2, 2, 1, 3, 2, 0, 1, 'Bed and Br', 4),
@@ -551,7 +529,8 @@ ALTER TABLE `locations`
 -- Indexes for table `plans`
 --
 ALTER TABLE `plans`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`tripId`),
+  ADD UNIQUE KEY `tripId` (`tripId`);
 
 --
 -- Indexes for table `touristplaces`
@@ -571,16 +550,6 @@ ALTER TABLE `trips`
 --
 ALTER TABLE `user_credentials`
   ADD PRIMARY KEY (`user_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `plans`
---
-ALTER TABLE `plans`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
