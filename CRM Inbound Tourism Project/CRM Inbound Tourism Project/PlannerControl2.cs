@@ -115,6 +115,7 @@ namespace CRM_Inbound_Tourism_Project
             plannerControl3.controlTripleRoom = txtTriple.Text;
             plannerControl3.controlTripId = triptId;
             plannerControl3.controlHStatus = cmbCategary.Text;
+            plannerControl3.controlDays = Convert.ToInt16( txtNoOfDays.Text);
             
             String sql = "INSERT INTO trips " +
                 "(tripId, " +

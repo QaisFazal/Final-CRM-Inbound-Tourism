@@ -21,9 +21,15 @@ namespace CRM_Inbound_Tourism_Project
 
         private String SQLPlannControl;
         private String singleRoom, doubleRoom, tripleRoom, adults, children, category;
+        private int days;
         private String h_status; 
         private String tripId;
 
+
+        public int controlDays {
+            get { return days; }
+            set { days = value; }
+        }
     
         public String controlHStatus {
             get { return h_status; }
@@ -245,15 +251,15 @@ namespace CRM_Inbound_Tourism_Project
 
         private void addPlans() {
 
-            double extraMeal = 0;//Convert.ToDouble(txtBreakFast.Text) + 
-                               //Convert.ToDouble(txtLunch.Text) + 
-                               //Convert.ToDouble(txtDinner.Text);
+            double extraMeal = Convert.ToDouble(/*txtBreakFast.Text*/4) + 
+                               Convert.ToDouble(/*txtLunch.Text*/45) + 
+                               Convert.ToDouble(/*txtDinner.Text*/ 56);
             
             Double hotelAmount = 
-                (Convert.ToDouble(txtSingleRoomHotel.Text) * Convert.ToDouble(singleRoom) ) + 
-                (Convert.ToDouble(txtDoubleRoomHotel.Text) * Convert.ToDouble(doubleRoom) ) +
-                (Convert.ToDouble(txtTripleRoomHotel.Text) * Convert.ToDouble(tripleRoom) );
-            double total = 0;
+                (Convert.ToDouble(txtSingleRoomHotel.Text) * Convert.ToDouble(singleRoom) ) * days  + 
+                (Convert.ToDouble(txtDoubleRoomHotel.Text) * Convert.ToDouble(doubleRoom) ) * days+
+                (Convert.ToDouble(txtTripleRoomHotel.Text) * Convert.ToDouble(tripleRoom) ) * days;
+            double total = hotelAmount + extraMeal;
 
             String sql = "INSERT INTO plans " +
                 "(tripId," +
