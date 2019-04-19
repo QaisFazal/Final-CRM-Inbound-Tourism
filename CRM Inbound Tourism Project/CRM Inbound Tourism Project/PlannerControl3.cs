@@ -244,6 +244,16 @@ namespace CRM_Inbound_Tourism_Project
             loadRoomPrice();
         }
 
+        private void txtAdult_TextChanged(object sender, EventArgs e)
+        {
+            txtTotAdult.Text = txtAdult.Text;
+        }
+
+        private void txtChildren_TextChanged(object sender, EventArgs e)
+        {
+            txtTotChildren.Text = txtChildren.Text;
+        }
+
         public void validation() {
             
 
@@ -259,7 +269,7 @@ namespace CRM_Inbound_Tourism_Project
                 (Convert.ToDouble(txtSingleRoomHotel.Text) * Convert.ToDouble(singleRoom) ) * days  + 
                 (Convert.ToDouble(txtDoubleRoomHotel.Text) * Convert.ToDouble(doubleRoom) ) * days+
                 (Convert.ToDouble(txtTripleRoomHotel.Text) * Convert.ToDouble(tripleRoom) ) * days;
-            double total = hotelAmount + extraMeal;
+            double total = hotelAmount + extraMeal + Convert.ToDouble(txtTotAdult.Text) + Convert.ToDouble(txtTotChildren.Text) ;
 
             String sql = "INSERT INTO plans " +
                 "(tripId," +

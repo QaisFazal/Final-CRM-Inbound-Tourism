@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2019 at 05:36 AM
+-- Generation Time: Apr 19, 2019 at 09:20 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -200,13 +200,16 @@ CREATE TABLE `plans` (
 --
 
 INSERT INTO `plans` (`tripId`, `fromLocation`, `toLocation`, `description`, `adultTotalCost`, `childrenTotalCost`, `hotelAmout`, `extraMealAmout`, `total`) VALUES
-('212@gmail.com4/18/2019 10:34:34 PM4/18/2019 10:34:45 PM', 'Anuradhapura', 'Colombo', 'new line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew linenew line\r\nnew line\r\n', 100, 100, 0, 0, 0),
-('212@gmail.com4/19/2019 12:04:20 AM4/19/2019 12:04:31 AM', 'Anuradhapura', 'Colombo', 'new line\r\nnew line\r\nnew line\r\nnew line\r\nnew line', 1000, 1000, 20000, 0, 0),
-('212@gmail.com4/19/2019 12:27:34 AM4/19/2019 12:27:47 AM', 'Colombo', 'Colombo', 'fdkslfjsal;\r\nafsdklfjas;ldf\r\nafsdjlkasdf\r\nasfjdlsjfl', 100, 10000, 10000, 0, 0),
-('212@gmail.com4/19/2019 8:47:43 AM4/19/2019 8:47:57 AM', 'Badula', 'Colombo', 'ljlkjkl', 100, 100, 20000, 105, 0),
-('212@gmail.com4/19/2019 8:50:37 AM4/19/2019 8:50:49 AM', 'Batticaloa', 'Colombo', 'fgsdfg\r\nsfgs\r\nsfgs\r\ngfss\r\ngfsdg\r\nfsdgsdgsfdgs', 100, 100, 20000, 105, 20105),
-('212@gmail.com4/19/2019 8:56:37 AM4/19/2019 8:56:50 AM', 'Batticaloa', 'Colombo', 'jlkj\r\nljlkj\r\nlkhjklh\r\nlkjlkj', 1000, 1000, 0, 105, 105),
-('212@gmail.com4/19/2019 9:00:02 AM4/19/2019 9:00:39 AM', 'Batticaloa', 'Colombo', 'fgfga', 1200, 4300, 40000, 105, 40105);
+('', 'Anuradhapura', 'Colombo', 'new line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew line\r\nnew linenew line\r\nnew line\r\n', 100, 100, 0, 0, 0),
+('', 'Anuradhapura', 'Colombo', 'new line\r\nnew line\r\nnew line\r\nnew line\r\nnew line', 1000, 1000, 20000, 0, 0),
+('', 'Colombo', 'Colombo', 'fdkslfjsal;\r\nafsdklfjas;ldf\r\nafsdjlkasdf\r\nasfjdlsjfl', 100, 10000, 10000, 0, 0),
+('', 'Badula', 'Colombo', 'ljlkjkl', 100, 100, 20000, 105, 0),
+('', 'Batticaloa', 'Colombo', 'fgsdfg\r\nsfgs\r\nsfgs\r\ngfss\r\ngfsdg\r\nfsdgsdgsfdgs', 100, 100, 20000, 105, 20105),
+('', 'Batticaloa', 'Colombo', 'jlkj\r\nljlkj\r\nlkhjklh\r\nlkjlkj', 1000, 1000, 0, 105, 105),
+('', 'Batticaloa', 'Colombo', 'fgfga', 1200, 4300, 40000, 105, 40105),
+('', 'Batticaloa', 'Colombo', 'jkljasdlfjk\r\nasdlkfjsal;f\r\naklsdfkjslakd;f\r\nsafdlkjsdlkf;j\r\nsfdklfjsdk', 1000, 10000, 40000, 105, 40105),
+('', 'Batticaloa', 'Colombo', 'jlsdkjfl;kas\r\nfdslkjasldkfja;f\r\nasdkljasldkfjsad\r\nasdkljfsladkfj\r\nafklsdjflask\r\nafdskljasdklfjdslkf\r\nafkdjalskfdj\r\nafdsjalksdfj\r\nafdkljsadflk', 450, 760, 20000, 105, 21315),
+('212@gmail.com4/19/2019 12:27:04 PM4/19/2019 12:27:18 PM', 'Batticaloa', 'Colombo', 'jlkj\r\nlkjlk\r\nlkkjk\r\nlkkjl', 120, 345, 20000, 105, 20570);
 
 -- --------------------------------------------------------
 
@@ -327,12 +330,15 @@ INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `children
 ('212@gmail.com4/19/2019 12:04:20 AM4/19/2019 12:04:31 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 12:10:38 AM4/19/2019 12:10:53 AM', '', '4/22/2019', 2, 1, 3, 1, 0, 0, 1, 'Full Board', 5),
 ('212@gmail.com4/19/2019 12:14:14 AM4/19/2019 12:14:26 AM', '', '4/22/2019', 2, 1, 2, 1, 0, 0, 1, 'Full Board', 5),
+('212@gmail.com4/19/2019 12:27:04 PM4/19/2019 12:27:18 PM', '', '4/21/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 12:27:34 AM4/19/2019 12:27:47 AM', '', '4/22/2019', 1, 0, 2, 1, 1, 0, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 8:40:46 AM4/19/2019 8:41:05 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 8:47:43 AM4/19/2019 8:47:57 AM', '', '4/21/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 8:50:37 AM4/19/2019 8:50:49 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 8:56:37 AM4/19/2019 8:56:50 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 9:00:02 AM4/19/2019 9:00:39 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 9:32:38 AM4/19/2019 9:32:52 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/19/2019 9:35:33 AM4/19/2019 9:35:45 AM', '', '4/23/2019', 2, 1, 1, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/5/2019 2:32:30 AM4/5/2019 2:32:45 AM', '', '4/8/2019', 2, 0, 0, 1, 0, 2, 0, '', 5),
 ('212@gmail.com4/5/2019 2:36:50 AM4/5/2019 2:37:06 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
 ('212@gmail.com4/5/2019 2:39:35 AM4/5/2019 2:39:55 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
@@ -524,13 +530,6 @@ ALTER TABLE `hotels`
 --
 ALTER TABLE `locations`
   ADD PRIMARY KEY (`locationName`);
-
---
--- Indexes for table `plans`
---
-ALTER TABLE `plans`
-  ADD PRIMARY KEY (`tripId`),
-  ADD UNIQUE KEY `tripId` (`tripId`);
 
 --
 -- Indexes for table `touristplaces`

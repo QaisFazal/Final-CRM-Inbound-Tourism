@@ -38,9 +38,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.addUserInBuilder1 = new CRM_Inbound_Tourism_Project.AddUserInBuilder();
             this.existingUserInBuilder1 = new CRM_Inbound_Tourism_Project.ExistingUserInBuilder();
+            this.addUserInBuilder1 = new CRM_Inbound_Tourism_Project.AddUserInBuilder();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblGenerateBill = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.lblGenerateBill);
             this.panel4.Controls.Add(this.bunifuCustomLabel1);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -131,13 +133,14 @@
             this.panel7.Size = new System.Drawing.Size(684, 554);
             this.panel7.TabIndex = 12;
             // 
-            // panel5
+            // existingUserInBuilder1
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(29, 581);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(684, 28);
-            this.panel5.TabIndex = 13;
+            this.existingUserInBuilder1.BackColor = System.Drawing.Color.White;
+            this.existingUserInBuilder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.existingUserInBuilder1.Location = new System.Drawing.Point(0, 0);
+            this.existingUserInBuilder1.Name = "existingUserInBuilder1";
+            this.existingUserInBuilder1.Size = new System.Drawing.Size(684, 554);
+            this.existingUserInBuilder1.TabIndex = 1;
             // 
             // addUserInBuilder1
             // 
@@ -148,14 +151,26 @@
             this.addUserInBuilder1.Size = new System.Drawing.Size(684, 554);
             this.addUserInBuilder1.TabIndex = 0;
             // 
-            // existingUserInBuilder1
+            // panel5
             // 
-            this.existingUserInBuilder1.BackColor = System.Drawing.Color.White;
-            this.existingUserInBuilder1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.existingUserInBuilder1.Location = new System.Drawing.Point(0, 0);
-            this.existingUserInBuilder1.Name = "existingUserInBuilder1";
-            this.existingUserInBuilder1.Size = new System.Drawing.Size(684, 554);
-            this.existingUserInBuilder1.TabIndex = 1;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(29, 581);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(684, 28);
+            this.panel5.TabIndex = 13;
+            // 
+            // lblGenerateBill
+            // 
+            this.lblGenerateBill.AutoSize = true;
+            this.lblGenerateBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenerateBill.ForeColor = System.Drawing.Color.Red;
+            this.lblGenerateBill.Location = new System.Drawing.Point(335, 15);
+            this.lblGenerateBill.Name = "lblGenerateBill";
+            this.lblGenerateBill.Size = new System.Drawing.Size(207, 19);
+            this.lblGenerateBill.TabIndex = 8;
+            this.lblGenerateBill.Text = "Click here to generate bill";
+            this.lblGenerateBill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGenerateBill.Click += new System.EventHandler(this.lblGenerateBill_Click);
             // 
             // PlannerControl
             // 
@@ -191,5 +206,6 @@
         public System.Windows.Forms.Panel panel4;
         private ExistingUserInBuilder existingUserInBuilder1;
         private AddUserInBuilder addUserInBuilder1;
+        private System.Windows.Forms.Label lblGenerateBill;
     }
 }

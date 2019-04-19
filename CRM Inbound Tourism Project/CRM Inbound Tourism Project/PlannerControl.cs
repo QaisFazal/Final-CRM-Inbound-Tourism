@@ -91,5 +91,13 @@ namespace CRM_Inbound_Tourism_Project
         {
 
         }
+
+        private void lblGenerateBill_Click(object sender, EventArgs e)
+        {
+            BillsForm billsForm = new BillsForm();
+            billsForm.Show();
+            billsForm.Focus();
+            
+        }
     }
 }

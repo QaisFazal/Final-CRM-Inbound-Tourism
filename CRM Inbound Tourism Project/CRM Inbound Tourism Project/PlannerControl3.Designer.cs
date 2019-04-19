@@ -535,6 +535,7 @@
             this.txtAdult.Name = "txtAdult";
             this.txtAdult.Size = new System.Drawing.Size(94, 20);
             this.txtAdult.TabIndex = 146;
+            this.txtAdult.TextChanged += new System.EventHandler(this.txtAdult_TextChanged);
             // 
             // txtChildren
             // 
@@ -542,6 +543,7 @@
             this.txtChildren.Name = "txtChildren";
             this.txtChildren.Size = new System.Drawing.Size(94, 20);
             this.txtChildren.TabIndex = 147;
+            this.txtChildren.TextChanged += new System.EventHandler(this.txtChildren_TextChanged);
             // 
             // txtTotAdult
             // 

@@ -195,3 +195,4 @@ D:\final year CSSE\SPPM\sppm-latest\Final-CRM-Inbound-Tourism\CRM Inbound Touris
 D:\final year CSSE\SPPM\sppm-latest\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.csproj.CopyComplete
 D:\final year CSSE\SPPM\sppm-latest\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.exe
 D:\final year CSSE\SPPM\sppm-latest\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM Inbound Tourism Project.pdb
+D:\final year CSSE\SPPM\sppm-latest\Final-CRM-Inbound-Tourism\CRM Inbound Tourism Project\CRM Inbound Tourism Project\obj\x86\Debug\CRM_Inbound_Tourism_Project.BillsForm.resources
