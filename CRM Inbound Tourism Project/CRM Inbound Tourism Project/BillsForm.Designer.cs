@@ -44,7 +44,7 @@
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Red;
-            this.btnClose.Location = new System.Drawing.Point(753, 12);
+            this.btnClose.Location = new System.Drawing.Point(776, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(35, 33);
             this.btnClose.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             this.txtCustomerId.Location = new System.Drawing.Point(288, 76);
             this.txtCustomerId.Name = "txtCustomerId";
-            this.txtCustomerId.Size = new System.Drawing.Size(369, 20);
+            this.txtCustomerId.Size = new System.Drawing.Size(442, 20);
             this.txtCustomerId.TabIndex = 2;
             // 
             // dataGridView
@@ -74,13 +74,13 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(58, 106);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(680, 236);
+            this.dataGridView.Size = new System.Drawing.Size(753, 236);
             this.dataGridView.TabIndex = 3;
             this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(663, 73);
+            this.btnSearch.Location = new System.Drawing.Point(736, 73);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(663, 346);
+            this.button1.Location = new System.Drawing.Point(736, 345);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -113,7 +113,7 @@
             this.txtSelectedTrip.Location = new System.Drawing.Point(288, 348);
             this.txtSelectedTrip.Name = "txtSelectedTrip";
             this.txtSelectedTrip.ReadOnly = true;
-            this.txtSelectedTrip.Size = new System.Drawing.Size(369, 20);
+            this.txtSelectedTrip.Size = new System.Drawing.Size(442, 20);
             this.txtSelectedTrip.TabIndex = 8;
             // 
             // label3
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(869, 502);
             this.ControlBox = false;
             this.Controls.Add(this.txtSelectedTrip);
             this.Controls.Add(this.label3);

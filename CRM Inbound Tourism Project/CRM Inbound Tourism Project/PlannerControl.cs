@@ -24,6 +24,8 @@ namespace CRM_Inbound_Tourism_Project
             //plannerControl31.Visible = false;
             existingUserInBuilder1.Visible = true;
 
+            itenararyControl1.Hide();
+
         }
 
         
@@ -97,6 +99,19 @@ namespace CRM_Inbound_Tourism_Project
             BillsForm billsForm = new BillsForm();
             billsForm.Show();
             billsForm.Focus();
+            
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            existingUserInBuilder1.Hide();
+            itenararyControl1.Show();
+        }
+
+        private void itenararyControl1_Load(object sender, EventArgs e)
+        {
+            existingUserInBuilder1.Show();
+            itenararyControl1.Hide();
             
         }
     }

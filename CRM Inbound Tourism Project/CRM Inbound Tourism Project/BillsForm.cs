@@ -81,19 +81,26 @@ namespace CRM_Inbound_Tourism_Project
                 doc.Open();
 
                 Paragraph paragraph = new Paragraph("Bill for trip : "+ txtSelectedTrip.Text);
+
                 doc.Add(paragraph);
+                Paragraph space = new Paragraph(" \n");
+                doc.Add(space);
+
+                Paragraph head = new Paragraph("From                    TO       Adult Cost    Children Cost    Hotel Payment    Extra meal    Total");
+                doc.Add(head);
+
                 int temp = 1;
                 while (dataReader.Read()) {
                     
                     Paragraph paragraph1 = new Paragraph(
-                        dataReader["fromLocation"].ToString() +"   "
-                        + dataReader["toLocation"].ToString() + "   "
+                        dataReader["fromLocation"].ToString() +"        "
+                        + dataReader["toLocation"].ToString() + "         "
                         //+ dataReader["description"].ToString() + "   "
-                        + dataReader["adultTotalCost"].ToString() + "   "
-                        + dataReader["childrenTotalCost"].ToString() + "   "
-                        + dataReader["hotelAmout"].ToString() + "   "
-                        + dataReader["extraMealAmout"].ToString() + "   "
-                        + dataReader["total"].ToString() + "   "
+                        + dataReader["adultTotalCost"].ToString() + "              "
+                        + dataReader["childrenTotalCost"].ToString() + "                  "
+                        + dataReader["hotelAmout"].ToString() + "                 "
+                        + dataReader["extraMealAmout"].ToString() + "            "
+                        + dataReader["total"].ToString() + "        "
                         );
                     doc.Add(paragraph1);
                     temp++;

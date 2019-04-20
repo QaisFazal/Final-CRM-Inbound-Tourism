@@ -32,16 +32,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblGenerateBill = new System.Windows.Forms.Label();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.itenararyControl1 = new CRM_Inbound_Tourism_Project.ItenararyControl();
             this.existingUserInBuilder1 = new CRM_Inbound_Tourism_Project.ExistingUserInBuilder();
             this.addUserInBuilder1 = new CRM_Inbound_Tourism_Project.AddUserInBuilder();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblGenerateBill = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +65,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.lblGenerateBill);
             this.panel4.Controls.Add(this.bunifuCustomLabel1);
             this.panel4.Controls.Add(this.label1);
@@ -71,6 +74,19 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(684, 49);
             this.panel4.TabIndex = 14;
+            // 
+            // lblGenerateBill
+            // 
+            this.lblGenerateBill.AutoSize = true;
+            this.lblGenerateBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenerateBill.ForeColor = System.Drawing.Color.Red;
+            this.lblGenerateBill.Location = new System.Drawing.Point(310, 15);
+            this.lblGenerateBill.Name = "lblGenerateBill";
+            this.lblGenerateBill.Size = new System.Drawing.Size(207, 19);
+            this.lblGenerateBill.TabIndex = 8;
+            this.lblGenerateBill.Text = "Click here to generate bill";
+            this.lblGenerateBill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGenerateBill.Click += new System.EventHandler(this.lblGenerateBill_Click);
             // 
             // bunifuCustomLabel1
             // 
@@ -125,6 +141,7 @@
             // 
             this.panel7.AutoScrollMargin = new System.Drawing.Size(0, 1000);
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.itenararyControl1);
             this.panel7.Controls.Add(this.existingUserInBuilder1);
             this.panel7.Controls.Add(this.addUserInBuilder1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -132,6 +149,35 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(684, 554);
             this.panel7.TabIndex = 12;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(29, 581);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(684, 28);
+            this.panel5.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(541, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 19);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Itenarary Control";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // itenararyControl1
+            // 
+            this.itenararyControl1.Location = new System.Drawing.Point(18, 27);
+            this.itenararyControl1.Name = "itenararyControl1";
+            this.itenararyControl1.Size = new System.Drawing.Size(704, 483);
+            this.itenararyControl1.TabIndex = 2;
+            this.itenararyControl1.Load += new System.EventHandler(this.itenararyControl1_Load);
             // 
             // existingUserInBuilder1
             // 
@@ -150,27 +196,6 @@
             this.addUserInBuilder1.Name = "addUserInBuilder1";
             this.addUserInBuilder1.Size = new System.Drawing.Size(684, 554);
             this.addUserInBuilder1.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(29, 581);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(684, 28);
-            this.panel5.TabIndex = 13;
-            // 
-            // lblGenerateBill
-            // 
-            this.lblGenerateBill.AutoSize = true;
-            this.lblGenerateBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenerateBill.ForeColor = System.Drawing.Color.Red;
-            this.lblGenerateBill.Location = new System.Drawing.Point(335, 15);
-            this.lblGenerateBill.Name = "lblGenerateBill";
-            this.lblGenerateBill.Size = new System.Drawing.Size(207, 19);
-            this.lblGenerateBill.TabIndex = 8;
-            this.lblGenerateBill.Text = "Click here to generate bill";
-            this.lblGenerateBill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblGenerateBill.Click += new System.EventHandler(this.lblGenerateBill_Click);
             // 
             // PlannerControl
             // 
@@ -207,5 +232,7 @@
         private ExistingUserInBuilder existingUserInBuilder1;
         private AddUserInBuilder addUserInBuilder1;
         private System.Windows.Forms.Label lblGenerateBill;
+        private System.Windows.Forms.Label label2;
+        private ItenararyControl itenararyControl1;
     }
 }

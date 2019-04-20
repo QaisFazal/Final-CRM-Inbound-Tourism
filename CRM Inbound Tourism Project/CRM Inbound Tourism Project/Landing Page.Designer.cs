@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            AnimatorNS.Animation animation15 = new AnimatorNS.Animation();
-            AnimatorNS.Animation animation14 = new AnimatorNS.Animation();
-            AnimatorNS.Animation animation13 = new AnimatorNS.Animation();
+            AnimatorNS.Animation animation4 = new AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Landing_Page));
+            AnimatorNS.Animation animation5 = new AnimatorNS.Animation();
+            AnimatorNS.Animation animation6 = new AnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlSlide = new System.Windows.Forms.Panel();
             this.pnlMarked = new System.Windows.Forms.Panel();
@@ -47,12 +47,12 @@
             this.panelInAnimator = new AnimatorNS.Animator(this.components);
             this.logoAnimator = new AnimatorNS.Animator(this.components);
             this.pnlOutAnimator = new AnimatorNS.Animator(this.components);
+            this.homeControl1 = new CRM_Inbound_Tourism_Project.HomeControl();
             this.dayToDayPlanControl1 = new CRM_Inbound_Tourism_Project.dayToDayPlanControl();
             this.hotalControl1 = new CRM_Inbound_Tourism_Project.HotalControl();
             this.addUserControl1 = new CRM_Inbound_Tourism_Project.AddUserControl();
             this.locationControl1 = new CRM_Inbound_Tourism_Project.LocationControl();
             this.itineraryBuilderControl1 = new CRM_Inbound_Tourism_Project.itineraryBuilderControl();
-            this.homeControl1 = new CRM_Inbound_Tourism_Project.HomeControl();
             this.panel1.SuspendLayout();
             this.pnlSlide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -257,65 +257,79 @@
             // 
             this.panelInAnimator.AnimationType = AnimatorNS.AnimationType.Scale;
             this.panelInAnimator.Cursor = null;
-            animation15.AnimateOnlyDifferences = true;
-            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
-            animation15.LeafCoeff = 0F;
-            animation15.MaxTime = 1F;
-            animation15.MinTime = 0F;
-            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
-            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
-            animation15.MosaicSize = 0;
-            animation15.Padding = new System.Windows.Forms.Padding(0);
-            animation15.RotateCoeff = 0F;
-            animation15.RotateLimit = 0F;
-            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
-            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
-            animation15.TimeCoeff = 0F;
-            animation15.TransparencyCoeff = 0F;
-            this.panelInAnimator.DefaultAnimation = animation15;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.panelInAnimator.DefaultAnimation = animation4;
             this.panelInAnimator.Interval = 15;
             // 
             // logoAnimator
             // 
             this.logoAnimator.AnimationType = AnimatorNS.AnimationType.ScaleAndRotate;
             this.logoAnimator.Cursor = null;
-            animation14.AnimateOnlyDifferences = true;
-            animation14.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.BlindCoeff")));
-            animation14.LeafCoeff = 0F;
-            animation14.MaxTime = 1F;
-            animation14.MinTime = 0F;
-            animation14.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicCoeff")));
-            animation14.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicShift")));
-            animation14.MosaicSize = 0;
-            animation14.Padding = new System.Windows.Forms.Padding(30);
-            animation14.RotateCoeff = 0.5F;
-            animation14.RotateLimit = 0.2F;
-            animation14.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.ScaleCoeff")));
-            animation14.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.SlideCoeff")));
-            animation14.TimeCoeff = 0F;
-            animation14.TransparencyCoeff = 0F;
-            this.logoAnimator.DefaultAnimation = animation14;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(30);
+            animation5.RotateCoeff = 0.5F;
+            animation5.RotateLimit = 0.2F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.logoAnimator.DefaultAnimation = animation5;
             // 
             // pnlOutAnimator
             // 
             this.pnlOutAnimator.AnimationType = AnimatorNS.AnimationType.HorizBlind;
             this.pnlOutAnimator.Cursor = null;
-            animation13.AnimateOnlyDifferences = true;
-            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
-            animation13.LeafCoeff = 0F;
-            animation13.MaxTime = 1F;
-            animation13.MinTime = 0F;
-            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
-            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
-            animation13.MosaicSize = 0;
-            animation13.Padding = new System.Windows.Forms.Padding(0);
-            animation13.RotateCoeff = 0F;
-            animation13.RotateLimit = 0F;
-            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
-            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
-            animation13.TimeCoeff = 0F;
-            animation13.TransparencyCoeff = 0F;
-            this.pnlOutAnimator.DefaultAnimation = animation13;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 0F;
+            this.pnlOutAnimator.DefaultAnimation = animation6;
+            // 
+            // homeControl1
+            // 
+            this.homeControl1.BackColor = System.Drawing.Color.White;
+            this.pnlOutAnimator.SetDecoration(this.homeControl1, AnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.homeControl1, AnimatorNS.DecorationType.None);
+            this.panelInAnimator.SetDecoration(this.homeControl1, AnimatorNS.DecorationType.None);
+            this.homeControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homeControl1.Location = new System.Drawing.Point(240, 0);
+            this.homeControl1.Name = "homeControl1";
+            this.homeControl1.Size = new System.Drawing.Size(684, 629);
+            this.homeControl1.TabIndex = 6;
+            this.homeControl1.Load += new System.EventHandler(this.homeControl1_Load);
+            this.homeControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.HomeMouseClicked);
             // 
             // dayToDayPlanControl1
             // 
@@ -385,20 +399,6 @@
             this.itineraryBuilderControl1.Size = new System.Drawing.Size(684, 629);
             this.itineraryBuilderControl1.TabIndex = 1;
             this.itineraryBuilderControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.itinryBuilderMouseClicked);
-            // 
-            // homeControl1
-            // 
-            this.homeControl1.BackColor = System.Drawing.Color.White;
-            this.pnlOutAnimator.SetDecoration(this.homeControl1, AnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.homeControl1, AnimatorNS.DecorationType.None);
-            this.panelInAnimator.SetDecoration(this.homeControl1, AnimatorNS.DecorationType.None);
-            this.homeControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homeControl1.Location = new System.Drawing.Point(240, 0);
-            this.homeControl1.Name = "homeControl1";
-            this.homeControl1.Size = new System.Drawing.Size(684, 629);
-            this.homeControl1.TabIndex = 6;
-            this.homeControl1.Load += new System.EventHandler(this.homeControl1_Load);
-            this.homeControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.HomeMouseClicked);
             // 
             // Landing_Page
             // 

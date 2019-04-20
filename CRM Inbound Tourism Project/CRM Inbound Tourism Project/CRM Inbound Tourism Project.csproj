@@ -243,6 +243,12 @@
     <Compile Include="HotalControl.Designer.cs">
       <DependentUpon>HotalControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItenararyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItenararyControl.Designer.cs">
+      <DependentUpon>ItenararyControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="itineraryBuilderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -325,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HotalControl.resx">
       <DependentUpon>HotalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItenararyControl.resx">
+      <DependentUpon>ItenararyControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="itineraryBuilderControl.resx">
       <DependentUpon>itineraryBuilderControl.cs</DependentUpon>

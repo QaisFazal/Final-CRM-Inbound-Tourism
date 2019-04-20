@@ -288,5 +288,9 @@ namespace CRM_Inbound_Tourism_Project
         {
             
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+        }
     }
 }
