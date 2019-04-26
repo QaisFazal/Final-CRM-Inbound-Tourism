@@ -179,8 +179,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 33);
+            this.panel1.Size = new System.Drawing.Size(780, 33);
             this.panel1.TabIndex = 86;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // flowLayoutPanel1
             // 
@@ -195,7 +196,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(762, 33);
+            this.panel3.Location = new System.Drawing.Point(745, 33);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(35, 947);
             this.panel3.TabIndex = 88;
@@ -211,16 +212,43 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(44, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 201);
+            this.panel2.Size = new System.Drawing.Size(701, 201);
             this.panel2.TabIndex = 89;
             // 
             // cmbDistrict
             // 
+            this.cmbDistrict.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDistrict.FormattingEnabled = true;
+            this.cmbDistrict.Items.AddRange(new object[] {
+            "Ampara",
+            "Anuradhapura",
+            "Badula",
+            "Batticaloa",
+            "Colombo",
+            "Galle",
+            "Gampaha",
+            "Hambantota",
+            "Jaffna",
+            "Kalutara",
+            "Kandy ",
+            "Kegalle",
+            "Kilinochchi",
+            "Kurunegala",
+            "Mannar",
+            "Matala",
+            "Monaragala",
+            "Mullaitivu",
+            "Nuwara Eliya",
+            "Polonnaruwa",
+            "Puttalam",
+            "Rathnapura",
+            "Trincomalee",
+            "Vavuniya"});
             this.cmbDistrict.Location = new System.Drawing.Point(533, 63);
             this.cmbDistrict.Name = "cmbDistrict";
             this.cmbDistrict.Size = new System.Drawing.Size(155, 21);
             this.cmbDistrict.TabIndex = 77;
+            this.cmbDistrict.SelectedIndexChanged += new System.EventHandler(this.cmbDistrict_SelectedIndexChanged);
             // 
             // flowLayoutPanel2
             // 
@@ -228,7 +256,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(44, 234);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(718, 35);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(701, 35);
             this.flowLayoutPanel2.TabIndex = 90;
             // 
             // bunifuElipse1
@@ -242,7 +270,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(44, 269);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(718, 354);
+            this.panel4.Size = new System.Drawing.Size(701, 354);
             this.panel4.TabIndex = 91;
             // 
             // bunifuElipse2
@@ -290,7 +318,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "LocationControl";
-            this.Size = new System.Drawing.Size(797, 913);
+            this.Size = new System.Drawing.Size(780, 913);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

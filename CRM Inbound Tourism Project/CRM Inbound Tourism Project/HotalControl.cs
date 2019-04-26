@@ -29,7 +29,7 @@ namespace CRM_Inbound_Tourism_Project
 
         private void addHotels() {
 
-            String sql = "INSERT INTO hotels (name,location,h_status) VALUES('" + this.tbHotelName.Text+ "','" + this.cmbHotelLocation.Text +"','"+  this.cmbHotelStatus.Text + "')";
+            String sql = "INSERT INTO hotels (name,location,h_status, singleRoomPrice, doubleRoomPrice, tripRoomPrice) VALUES('" + this.tbHotelName.Text+ "','" + this.cmbHotelLocation.Text +"','"+  this.cmbHotelStatus.Text + "','"+txtSingle.Text+"','"+txtDouble.Text+"','"+txtTriple.Text+"')";
 
             try
             {
@@ -61,6 +61,9 @@ namespace CRM_Inbound_Tourism_Project
                 conn.Open();
                 dataReader1 = command1.ExecuteReader();
 
+
+                cmbHotelLocation.Items.Clear();
+                cmbHotelLocation1.Items.Clear();
                 while (dataReader1.Read())
                 {
                     String locations = dataReader1.GetString("districtName");
@@ -152,8 +155,7 @@ namespace CRM_Inbound_Tourism_Project
                 "',location='" + cmbHotelLocation1.Text +
                 "',h_status='" + cmbHotelStatus1.Text +
                 "' WHERE name = '" + txtHotelName1.Text + "'";
-
-
+            
             try
             {
 

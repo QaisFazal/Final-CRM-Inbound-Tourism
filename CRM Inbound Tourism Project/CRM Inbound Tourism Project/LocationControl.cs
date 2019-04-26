@@ -24,6 +24,39 @@ namespace CRM_Inbound_Tourism_Project
         private void LocationControl_Load(object sender, EventArgs e)
         {
             populateComboBox();
+            loadLocation();
+        }
+
+        private void loadLocation()
+        {
+            String sql = "SELECT * FROM districts";
+
+            try
+            {
+
+                MySqlCommand command1 = new MySqlCommand(sql, conn);
+                MySqlDataReader dataReader1;
+                conn.Open();
+                dataReader1 = command1.ExecuteReader();
+
+
+                cmbDistrict.Items.Clear();
+               
+                while (dataReader1.Read())
+                {
+                    String locations = dataReader1.GetString("districtName");
+                    cmbDistrict.Items.Add(locations);
+                }
+
+
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("There is a error while attepmting to update records : " + e);
+                conn.Close();
+            }
         }
 
 
@@ -163,6 +196,16 @@ namespace CRM_Inbound_Tourism_Project
         private void btnDelete_Click(object sender, EventArgs e)
         {
             deleteLocation();
+        }
+
+        private void cmbDistrict_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           /// loadLocation();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

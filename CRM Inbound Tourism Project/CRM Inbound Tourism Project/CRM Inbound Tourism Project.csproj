@@ -225,6 +225,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmItenryContol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItenryContol.Designer.cs">
+      <DependentUpon>frmItenryContol.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -322,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItenryContol.resx">
+      <DependentUpon>frmItenryContol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeControl.resx">
       <DependentUpon>HomeControl.cs</DependentUpon>

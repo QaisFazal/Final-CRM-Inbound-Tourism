@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +11,19 @@ using MySql.Data.MySqlClient;
 
 namespace CRM_Inbound_Tourism_Project
 {
-    public partial class ItenararyControl : UserControl
+    public partial class frmItenryContol : Form
     {
         private static MySqlConnection conn = new MySqlConnection("server=Localhost;database=crm_inbound_tourism; user id=root");
 
-        public ItenararyControl()
+
+        public frmItenryContol()
         {
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -55,6 +56,49 @@ namespace CRM_Inbound_Tourism_Project
             }
         }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            updateTrip();
+        }
+
+        private void updateTrip()
+        {
+
+            String sql = "UPDATE trips" +
+                " SET arivalDate = '" + arival.Text +
+                "', arivalDate = '" + arival.Text +
+                "', depatureDate = '" + depature.Text +
+                "', adults = '" + adults.Text +
+                "', childrents = '" + childrends.Text +
+                "', noOfDays = '" + noOfDays.Text +
+                "', noOfRooms = '" + noOfRooms.Text +
+                "', singleRoom = '" + singleRoom.Text +
+                "', doubleRoom = '" + doubleRoom.Text +
+                "', tripleRoom = '" + tripleRoom.Text +
+                "', meal = '" + cmbMeals.Text +
+                "', starGategory = '" + cmbCategary.Text +
+                "' WHERE tripId ='" + tripId.Text + "'";
+
+            try
+            {
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                MySqlDataReader dataReader;
+                conn.Open();
+                dataReader = command.ExecuteReader();
+
+                MessageBox.Show("Successfully updated...!");
+                conn.Close();
+
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("There is a error while attepmting to add records : " + e);
+                conn.Close();
+            }
+        }
+
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -77,58 +121,7 @@ namespace CRM_Inbound_Tourism_Project
                 cmbCategary.Text = row.Cells["starGategory"].Value.ToString();
             }
         }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            updateTrip();
-        }
-        
-        private void updateTrip() {
-
-            String sql = "UPDATE trips" +
-                " SET arivalDate = '" + arival.Text +
-                "', arivalDate = '" + arival.Text +
-                "', depatureDate = '" + depature.Text +
-                "', adults = '" + adults.Text +
-                "', childrents = '" + childrends.Text +
-                "', noOfDays = '" + noOfDays.Text +
-                "', noOfRooms = '" + noOfRooms.Text +
-                "', singleRoom = '" + singleRoom.Text +
-                "', doubleRoom = '" + doubleRoom.Text +
-                "', tripleRoom = '" + tripleRoom.Text +
-                "', meal = '" + cmbMeals.Text +
-                "', starGategory = '" + cmbCategary.Text +
-                "' WHERE tripId ='"+tripId.Text+"'";
-
-            try
-            {
-                MySqlCommand command = new MySqlCommand(sql, conn);
-                MySqlDataReader dataReader;
-                conn.Open();
-                dataReader = command.ExecuteReader();
-
-                MessageBox.Show("Successfully updated...!");
-                conn.Close();
-                
-
-            }
-            catch (Exception e)
-            {
-
-                MessageBox.Show("There is a error while attepmting to add records : " + e);
-                conn.Close();
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            PlannerControl plannerControl = new PlannerControl();
-            this.Controls.Clear();
-            plannerControl.BringToFront();
-            //this.Controls.Add(plannerControl);
-
-            //dayToDayPlanControl1.Hide();
-            //itineraryBuilderControl1.BringToFront();
-        }
     }
+
+
 }

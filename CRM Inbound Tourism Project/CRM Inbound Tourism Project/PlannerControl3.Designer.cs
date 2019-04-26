@@ -468,6 +468,7 @@
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 136;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblSingleRoom
             // 
@@ -721,7 +722,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PlannerControl3";
-            this.Size = new System.Drawing.Size(953, 604);
+            this.Size = new System.Drawing.Size(936, 587);
             this.Load += new System.EventHandler(this.PlannerControl3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

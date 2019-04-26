@@ -236,7 +236,7 @@ namespace CRM_Inbound_Tourism_Project
         {
             addPlans();
             //validation();
-
+            loadToGridView();
         }
 
         private void cmbHotels_SelectedIndexChanged(object sender, EventArgs e)
@@ -252,6 +252,13 @@ namespace CRM_Inbound_Tourism_Project
         private void txtChildren_TextChanged(object sender, EventArgs e)
         {
             txtTotChildren.Text = txtChildren.Text;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PlannerControl2 plannerControl2 = new PlannerControl2();
+            this.Controls.Clear();
+            this.Controls.Add(plannerControl2);
         }
 
         public void validation() {
@@ -441,5 +448,34 @@ namespace CRM_Inbound_Tourism_Project
                 conn.Close();
             }
         }
+
+        private void loadToGridView()
+        {
+            String sql = "SELECT *  FROM plans WHERE tripId = '" + tripId+"'";
+
+            try
+            {
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                MySqlDataReader dataReader;
+                conn.Open();
+                dataReader = command.ExecuteReader();
+
+                DataTable dt = new DataTable();
+                dt.Load(dataReader);
+                dataGridView.DataSource = dt;
+
+                conn.Close();
+
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("There is a error while attepmting to add records : " + e);
+                conn.Close();
+            }
+        }
     }
+
+  
 }

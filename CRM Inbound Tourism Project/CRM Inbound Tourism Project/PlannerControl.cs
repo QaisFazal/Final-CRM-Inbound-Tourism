@@ -104,8 +104,8 @@ namespace CRM_Inbound_Tourism_Project
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            existingUserInBuilder1.Hide();
-            itenararyControl1.Show();
+            frmItenryContol frmItenryContol1 = new frmItenryContol();
+            frmItenryContol1.Show();
         }
 
         private void itenararyControl1_Load(object sender, EventArgs e)
