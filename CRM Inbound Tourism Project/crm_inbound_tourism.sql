@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2019 at 09:20 AM
+-- Generation Time: Apr 28, 2019 at 07:28 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -66,6 +66,8 @@ INSERT INTO `customers` (`name`, `phone_number`, `residence`, `email`, `national
 ('FromBuilder5', 'FromBuilder5', 'FromBuilder5', 'FromBuilder5', 'FromBuilder5', 'FromBuilder5'),
 ('new', '078-7867567', 'Sri Lanka', 'new@gmail.com', 'Sri Lanka', 'English'),
 ('newUser', '98798798', 'India', 'newUser@gmail.com', 'India', 'Hindi'),
+('Shamila', '0702700948', 'Sri Lanka', 'Shamila@gmai.com', 'Sri Lanka', 'English'),
+('sdf', '0788888', 'sd', 'Shamila@gmail.com', 'ds', 'sadsa'),
 ('shan', '0787676876', 'Sri Lanka', 'shan@gmail.com', 'Sri Lanka', 'English'),
 ('test3', 'test3', 'test3', 'test3', 'test3', 'test3'),
 ('testDailyRoutin', 'testDailyRoutin', 'testDailyRoutin', 'testDailyRoutin', 'testDailyRoutin', 'testDailyRoutin'),
@@ -108,7 +110,7 @@ INSERT INTO `districts` (`districtName`) VALUES
 ('Mannar'),
 ('Matala'),
 ('Monaragala'),
-('mullaitivu'),
+('Mullaitivu'),
 ('Nuwara Eliya'),
 ('Polonnaruwa'),
 ('Puttalam'),
@@ -123,21 +125,28 @@ INSERT INTO `districts` (`districtName`) VALUES
 --
 
 CREATE TABLE `hotels` (
-  `hotelId` varchar(100) DEFAULT NULL,
   `name` varchar(60) NOT NULL,
   `location` varchar(80) NOT NULL,
-  `h_status` int(11) NOT NULL
+  `h_status` int(11) NOT NULL,
+  `singleRoomPrice` varchar(255) NOT NULL,
+  `doubleRoomPrice` varchar(255) NOT NULL,
+  `tripRoomPrice` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `hotels`
 --
 
-INSERT INTO `hotels` (`hotelId`, `name`, `location`, `h_status`) VALUES
-(NULL, 'Galadhari', 'Colombo', 5),
-(NULL, 'Hiltonn', 'Colombo', 5),
-(NULL, 'Star', 'Anuradhapura', 5),
-(NULL, 'test1', 'test1', 0);
+INSERT INTO `hotels` (`name`, `location`, `h_status`, `singleRoomPrice`, `doubleRoomPrice`, `tripRoomPrice`) VALUES
+('bbb', 'Anuradhapura', 5, '', '', ''),
+('Galadhari', 'Colombo', 5, '', '', ''),
+('Gones', 'Galle', 4, '15000', '30000', '45000'),
+('GonesJames', 'Badula', 4, '15000', '30000', '45000'),
+('Hiltonn', 'Colombo', 5, '', '', ''),
+('JamesBond', 'Anuradhapura', 5, '22000', '44000', '66000'),
+('JamesJames', 'Badula', 2, '15000', '30000', '45000'),
+('Star', 'Anuradhapura', 5, '', '', ''),
+('test1', 'test1', 0, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -158,6 +167,7 @@ INSERT INTO `locations` (`locationName`, `district`) VALUES
 ('Dhaladha', 'Kandy'),
 ('Fort', 'Colombo'),
 ('GallFace', 'Colombo'),
+('Hunupitiya', 'Gampaha'),
 ('Marble Beach', 'Trincomalee'),
 ('Nikevereti ', 'Kurunegale '),
 ('Punji Borelle', 'Colombo'),
@@ -209,7 +219,24 @@ INSERT INTO `plans` (`tripId`, `fromLocation`, `toLocation`, `description`, `adu
 ('', 'Batticaloa', 'Colombo', 'fgfga', 1200, 4300, 40000, 105, 40105),
 ('', 'Batticaloa', 'Colombo', 'jkljasdlfjk\r\nasdlkfjsal;f\r\naklsdfkjslakd;f\r\nsafdlkjsdlkf;j\r\nsfdklfjsdk', 1000, 10000, 40000, 105, 40105),
 ('', 'Batticaloa', 'Colombo', 'jlsdkjfl;kas\r\nfdslkjasldkfja;f\r\nasdkljasldkfjsad\r\nasdkljfsladkfj\r\nafklsdjflask\r\nafdskljasdklfjdslkf\r\nafkdjalskfdj\r\nafdsjalksdfj\r\nafdkljsadflk', 450, 760, 20000, 105, 21315),
-('212@gmail.com4/19/2019 12:27:04 PM4/19/2019 12:27:18 PM', 'Batticaloa', 'Colombo', 'jlkj\r\nlkjlk\r\nlkkjk\r\nlkkjl', 120, 345, 20000, 105, 20570);
+('212@gmail.com4/19/2019 12:27:04 PM4/19/2019 12:27:18 PM', 'Batticaloa', 'Colombo', 'jlkj\r\nlkjlk\r\nlkkjk\r\nlkkjl', 120, 345, 20000, 105, 20570),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', 'Ampara', 'Colombo', 'Beach', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', 'Ampara', 'Colombo', 'Beach', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', 'Ampara', 'Colombo', 'Beach', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', 'Ampara', 'Colombo', 'Beach', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', 'Ampara', 'Colombo', 'Beach', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', 'Ampara', 'Colombo', 'Beach', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 12:03:52 PM4/20/2019 12:04:05 PM', 'Badula', 'Colombo', 'fgfd\r\ngfgasd\r\nasgasgd\r\nads\r\nagsgassadg\r\nagsdgdsa\r\n', 100, 1000, 20000, 105, 21205),
+('212@gmail.com4/20/2019 12:05:51 PM4/20/2019 12:06:03 PM', 'Colombo', 'Colombo', 'jkllk;\r\nlkkj\r\nklkj', 1000, 1000000, 60000, 105, 1061105),
+('212@gmail.com4/20/2019 12:09:30 PM4/20/2019 12:09:41 PM', 'Anuradhapura', 'Colombo', 'jlklkjkl;\r\nlkjlkj\r\nkljlk\r\njlkjlk', 1000, 1000, 20000, 105, 22105),
+('212@gmail.com4/20/2019 12:09:30 PM4/20/2019 12:09:41 PM', 'Anuradhapura', 'Colombo', 'jlklkjkl;\r\nlkjlkj\r\nkljlk\r\njlkjlk', 1000, 1000, 20000, 105, 22105),
+('212@gmail.com4/20/2019 12:09:30 PM4/20/2019 12:09:41 PM', 'Anuradhapura', 'Colombo', 'jlklkjkl;\r\nlkjlkj\r\nkljlk\r\njlkjlk', 1000, 1000, 20000, 105, 22105),
+('212@gmail.com4/20/2019 12:09:30 PM4/20/2019 12:09:41 PM', 'Anuradhapura', 'Colombo', 'jlklkjkl;\r\nlkjlkj\r\nkljlk\r\njlkjlk', 1000, 1000, 20000, 105, 22105),
+('Shamila@gmail.com4/20/2019 12:35:57 PM4/20/2019 12:36:16 PM', 'Anuradhapura', 'Colombo', 'sas', 2000, 1000, 60000, 105, 63105),
+('Shamila@gmail.com4/20/2019 12:35:57 PM4/20/2019 12:36:16 PM', 'Anuradhapura', 'Colombo', 'sas', 2000, 1000, 60000, 105, 63105),
+('212@gmail.com4/20/2019 2:53:00 PM4/20/2019 2:53:19 PM', 'Batticaloa', 'Colombo', 'first \r\nsecond\r\nthird', 1200, 2300, 100000, 105, 103605),
+('212@gmail.com4/20/2019 2:53:00 PM4/20/2019 2:53:19 PM', 'Batticaloa', 'Colombo', 'first \r\nsecond\r\nthird', 1200, 2300, 100000, 105, 103605),
+('212@gmail.com4/20/2019 2:53:00 PM4/20/2019 2:53:19 PM', 'Batticaloa', 'Colombo', 'first \r\nsecond\r\nthird', 1200, 2300, 100000, 105, 103605);
 
 -- --------------------------------------------------------
 
@@ -271,9 +298,9 @@ CREATE TABLE `trips` (
 INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `childrents`, `noOfDays`, `noOfRooms`, `singleRoom`, `doubleRoom`, `tripleRoom`, `meal`, `starGategory`) VALUES
 ('1112@gmail.com4/6/2019 1:11:28 AM', '', '4/8/2019', 2, 0, 1, 1, 0, 1, 0, '', 0),
 ('1112@gmail.com4/6/2019 2:06:58 AM4/6/2019 2:07:09 AM', '', '4/8/2019', 2, 0, 2, 1, 0, 1, 0, 'Half Board', 5),
-('212@gmail.com3/29/2019 10:54:12 PM3/29/2019 10:56:28 PM', 'fromExistr', 'fromExistr', 2, 2, 3, 3, 0, 3, 0, 'Half Board', 3),
-('212@gmail.com3/30/2019 2:14:53 PM3/30/2019 2:15:39 PM', 'uljklkjl', 'lkjkl', 0, 0, 0, 0, 0, 0, 0, 'Bed and Br', 3),
-('212@gmail.com4/1/2019 3:48:27 PM4/1/2019 3:48:49 PM', 'Monday, Ap', '4/10/2019', 0, 0, 9, 0, 0, 0, 0, 'Bed and Br', 3),
+('212@gmail.com3/29/2019 10:54:12 PM3/29/2019 10:56:28 PM', '05.04.2019', '05.05.2019', 2, 2, 3, 3, 0, 3, 0, 'Half Board', 3),
+('212@gmail.com3/30/2019 2:14:53 PM3/30/2019 2:15:39 PM', '05.04.2019', '10.04.2019', 0, 0, 0, 0, 0, 0, 0, '', 3),
+('212@gmail.com4/1/2019 3:48:27 PM4/1/2019 3:48:49 PM', '05.04.2019', '05.04.2019', 0, 0, 9, 0, 0, 0, 0, '', 3),
 ('212@gmail.com4/15/2019 11:54:06 AM4/15/2019 11:55:34 AM', '', '4/18/2019', 2, 1, 3, 1, 0, 0, 1, 'Half Board', 5),
 ('212@gmail.com4/15/2019 12:04:03 PM4/15/2019 12:04:20 PM', '', '4/16/2019', 2, 0, 1, 1, 0, 0, 1, 'Half Board', 4),
 ('212@gmail.com4/16/2019 5:40:56 PM4/16/2019 5:41:11 PM', '', '4/3/2019', 2, 0, 1, 1, 0, 1, 0, 'Half Board', 5),
@@ -339,6 +366,16 @@ INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `children
 ('212@gmail.com4/19/2019 9:00:02 AM4/19/2019 9:00:39 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 9:32:38 AM4/19/2019 9:32:52 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/19/2019 9:35:33 AM4/19/2019 9:35:45 AM', '', '4/23/2019', 2, 1, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 11:49:42 AM4/20/2019 11:50:45 AM', '', '4/23/2019', 2, 1, 2, 2, 1, 1, 0, 'Bed and Br', 5),
+('212@gmail.com4/20/2019 12:03:52 PM4/20/2019 12:04:05 PM', '', '4/21/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 12:05:51 PM4/20/2019 12:06:03 PM', '', '4/23/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 12:09:30 PM4/20/2019 12:09:41 PM', '', '4/21/2019', 2, 0, 1, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 2:38:25 PM4/20/2019 2:39:59 PM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 4),
+('212@gmail.com4/20/2019 2:53:00 PM4/20/2019 2:53:19 PM', '', '4/17/2019', 2, 0, 5, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 6:04:55 AM4/20/2019 6:05:09 AM', '', '4/29/2019', 2, 1, 5, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 6:06:10 AM4/20/2019 6:06:22 AM', '', '4/27/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 6:07:27 AM4/20/2019 6:07:43 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
+('212@gmail.com4/20/2019 6:11:10 AM4/20/2019 6:11:24 AM', '', '4/22/2019', 2, 0, 2, 1, 0, 1, 0, 'Full Board', 5),
 ('212@gmail.com4/5/2019 2:32:30 AM4/5/2019 2:32:45 AM', '', '4/8/2019', 2, 0, 0, 1, 0, 2, 0, '', 5),
 ('212@gmail.com4/5/2019 2:36:50 AM4/5/2019 2:37:06 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
 ('212@gmail.com4/5/2019 2:39:35 AM4/5/2019 2:39:55 AM', '', '4/3/2019', 2, 0, 0, 1, 0, 1, 0, '', 5),
@@ -476,6 +513,7 @@ INSERT INTO `trips` (`tripId`, `arivalDate`, `depatureDate`, `adults`, `children
 ('sample4@gmail.com3/29/2019 7:42:09 PM', 'tod', 'tom', 2, 2, 1, 3, 2, 0, 1, 'Bed and Br', 4),
 ('sample53/29/2019 7:44:01 PM', '30/03/2019', '04/04/2019', 2, 2, 6, 3, 2, 0, 1, 'Bed and Br', 5),
 ('sample@gmail.com3/29/2019 5:04:41 AM', 'today', 'tommorow', 1, 1, 1, 1, 3, 0, 0, 'Full Board', 5),
+('Shamila@gmail.com4/20/2019 12:35:57 PM4/20/2019 12:36:16 PM', '', '4/23/2019', 2, 1, 2, 2, 1, 1, 0, 'Bed and Br', 5),
 ('shan@gmail.com4/6/2019 10:38:47 AM', '', '4/9/2019', 2, 0, 3, 1, 0, 1, 0, 'Full Board', 5);
 
 -- --------------------------------------------------------
@@ -497,8 +535,9 @@ CREATE TABLE `user_credentials` (
 
 INSERT INTO `user_credentials` (`user_id`, `user_name`, `user_type`, `access_code`) VALUES
 ('1', '1', '1', '1'),
-('admin@gmail.com', 'admin', 'admin', 'admin@123'),
+('admin@gmail.com', 'admin', 'user', 'admin'),
 ('dev@gmail.com', 'developer', 'dev', 'dev@123'),
+('new@gmail.com', 'new', 'user', 'new@123'),
 ('user@gmail.com', 'user', 'user', 'user@123');
 
 --
